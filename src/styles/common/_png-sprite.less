@@ -11,47 +11,22 @@ The large array-like variables contain all information about a single icon
 At the bottom of this section, we provide information about the spritesheet itself
 @spritesheet: width height image @spritesheet-sprites;
 */
-@sprite-html5-name: sprite__html5;
-@sprite-html5-x: 0px;
-@sprite-html5-y: 0px;
-@sprite-html5-offset-x: 0px;
-@sprite-html5-offset-y: 0px;
-@sprite-html5-width: 32px;
-@sprite-html5-height: 32px;
-@sprite-html5-total-width: 32px;
-@sprite-html5-total-height: 32px;
-@sprite-html5-image: '../img/sprites/png/png-sprite.png';
-@sprite-html5: 0px 0px 0px 0px 32px 32px 32px 32px '../img/sprites/png/png-sprite.png' sprite__html5;
-@sprite-html5-2x-name: sprite__html5-2x;
-@sprite-html5-2x-x: 0px;
-@sprite-html5-2x-y: 0px;
-@sprite-html5-2x-offset-x: 0px;
-@sprite-html5-2x-offset-y: 0px;
-@sprite-html5-2x-width: 64px;
-@sprite-html5-2x-height: 64px;
-@sprite-html5-2x-total-width: 64px;
-@sprite-html5-2x-total-height: 64px;
-@sprite-html5-2x-image: '../img/sprites/png/png-sprite-2x.png';
-@sprite-html5-2x: 0px 0px 0px 0px 64px 64px 64px 64px '../img/sprites/png/png-sprite-2x.png' sprite__html5-2x;
+@sprite-arrow-name: sprite__arrow;
+@sprite-arrow-x: 0px;
+@sprite-arrow-y: 0px;
+@sprite-arrow-offset-x: 0px;
+@sprite-arrow-offset-y: 0px;
+@sprite-arrow-width: 32px;
+@sprite-arrow-height: 102px;
+@sprite-arrow-total-width: 32px;
+@sprite-arrow-total-height: 102px;
+@sprite-arrow-image: '../img/sprites/png/png-sprite.png';
+@sprite-arrow: 0px 0px 0px 0px 32px 102px 32px 102px '../img/sprites/png/png-sprite.png' sprite__arrow;
 @spritesheet-width: 32px;
-@spritesheet-height: 32px;
+@spritesheet-height: 102px;
 @spritesheet-image: '../img/sprites/png/png-sprite.png';
-@spritesheet-sprites: @sprite-html5;
-@spritesheet: 32px 32px '../img/sprites/png/png-sprite.png' @spritesheet-sprites;
-@retina-spritesheet-width: 64px;
-@retina-spritesheet-height: 64px;
-@retina-spritesheet-image: '../img/sprites/png/png-sprite-2x.png';
-@retina-spritesheet-sprites: @sprite-html5-2x;
-@retina-spritesheet: 64px 64px '../img/sprites/png/png-sprite-2x.png' @retina-spritesheet-sprites;
-
-/*
-These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
-
-The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
-*/
-@sprite-html5-group-name: sprite__html5;
-@sprite-html5-group: sprite__html5 @sprite-html5 @sprite-html5-2x;
-@retina-groups: @sprite-html5-group;
+@spritesheet-sprites: @sprite-arrow;
+@spritesheet: 32px 102px '../img/sprites/png/png-sprite.png' @spritesheet-sprites;
 
 /*
 The provided classes are intended to be used with the array-like variables
@@ -91,36 +66,6 @@ The provided classes are intended to be used with the array-like variables
 }
 
 /*
-The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
-  It should be used with a "retina group" variable.
-
-The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
-
-@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
-
-.icon-home {
-  .retina-sprite(@icon-home-group);
-}
-*/
-.sprite-background-size(@sprite) {
-  @sprite-total-width: extract(@sprite, 7);
-  @sprite-total-height: extract(@sprite, 8);
-  background-size: @sprite-total-width @sprite-total-height;
-}
-
-.retina-sprite(@retina-group) {
-  @normal-sprite: extract(@retina-group, 2);
-  @retina-sprite: extract(@retina-group, 3);
-  .sprite(@normal-sprite);
-
-  @media (-webkit-min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi) {
-    .sprite-image(@retina-sprite);
-    .sprite-background-size(@normal-sprite);
-  }
-}
-
-/*
 The `.sprites` mixin generates identical output to the CSS template
   but can be overridden inside of LESS
 
@@ -136,19 +81,4 @@ This must be run when you have at least 2 sprites.
     .sprite(@sprite);
   }
   .sprites(@sprites, @i + 1);
-}
-
-/*
-The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
-  This yields the same output as CSS retina template but can be overridden in LESS
-
-.retina-sprites(@retina-groups);
-*/
-.retina-sprites(@retina-groups, @i: 1) when (@i <= length(@retina-groups)) {
-  @retina-group: extract(@retina-groups, @i);
-  @sprite-name: extract(@retina-group, 1);
-  .@{sprite-name} {
-    .retina-sprite(@retina-group);
-  }
-  .retina-sprites(@retina-groups, @i + 1);
 }

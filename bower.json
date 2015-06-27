@@ -15,8 +15,8 @@
   ],
   "devDependencies": {
     "bootstrap": "~3.3.4",
-    "font-awesome": "~4.3.0",
-    "scrollport-js": "~1.0.4"
+    "fullpage.js": "~2.6.6",
+    "modernizr": "~2.8.3"
   },
   "dependencies": {}
 }

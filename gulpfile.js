@@ -186,9 +186,9 @@ gulp.task('png-sprite', function () {
     var spriteData = gulp.src(projectPath.src.pngSprite).pipe(spritesmith({
         imgName: 'png-sprite.png',
         imgPath: '../img/sprites/png/png-sprite.png',
-        retinaSrcFilter: projectPath.src.pngRetinaSprite,
-        retinaImgName: 'png-sprite-2x.png',
-        retinaImgPath: '../img/sprites/png/png-sprite-2x.png',
+        //retinaSrcFilter: projectPath.src.pngRetinaSprite,
+        //retinaImgName: 'png-sprite-2x.png',
+        //retinaImgPath: '../img/sprites/png/png-sprite-2x.png',
         padding: 0,
         cssName: '_png-sprite.less',
         cssVarMap: function (sprite) {

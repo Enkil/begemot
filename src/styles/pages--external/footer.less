@@ -1,0 +1,45 @@
+.footer{
+  background-color: @white;
+  height: 70px;
+  position: fixed;
+  bottom: 290px;
+  @media (max-height: 850px) {
+    bottom: 250px;
+  }
+  @media (max-height: 850px) {
+    bottom: 200px;
+  }
+  @media (max-height: 750px) {
+    bottom: 150px;
+  }
+  left: calc(~"50% - 285px");
+  z-index: 10;
+  width: 570px;
+
+  &__menu{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  &__menu-item{
+    display: inline-block;
+    margin-right: 48px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__menu-link{
+    .ProximaNova-Regular;
+    color: @dark;
+    font-size: 13px;
+    line-height: 75px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    .site-transition;
+    &:hover{
+      color: @red;
+    }
+  }
+}
