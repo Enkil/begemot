@@ -3,6 +3,7 @@
 /**************************************/
 /* Third party */
 @import '../../bower_components/fullpage.js/jquery.fullPage.css';
+@import '../../bower_components/object-fit/dist/polyfill.object-fit.css';
 /* Custom */
 /***************************************************/
 /* Set custom or change third-party Less variables */
@@ -150,7 +151,7 @@ h1
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 56px;
-    line-height: 72pt;
+    line-height: 72px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -161,7 +162,7 @@ h2
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 32px;
-    line-height: 40pt;
+    line-height: 40px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -172,7 +173,7 @@ h3
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 28px;
-    line-height: 40pt;
+    line-height: 40px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -183,7 +184,7 @@ h4
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 24px;
-    line-height: 32pt;
+    line-height: 32px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -194,7 +195,7 @@ h5
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 18px;
-    line-height: 24pt;
+    line-height: 24px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -205,7 +206,7 @@ h6
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
-    line-height: 24pt;
+    line-height: 24px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -216,7 +217,7 @@ h6
 {
     font-family: 'ProximaNova-Light', sans-serif;
     font-size: 18px;
-    line-height: 28pt;
+    line-height: 28px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -227,7 +228,7 @@ h6
 {
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 16px;
-    line-height: 24pt;
+    line-height: 24px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -272,7 +273,7 @@ h6
     height: 100px;
 
     border: 10px solid #f52d42;
-    border-bottom: none;
+    border-bottom: none!important;
 }
 .arrow
 {
@@ -285,6 +286,68 @@ h6
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: 0 0;
+}
+.team
+{
+    height: 610px;
+    margin-top: 15px;
+
+    border: 10px solid #f52d42;
+}
+.team__member
+{
+    width: 760px;
+    height: 100%;
+
+    text-align: center;
+}
+.team__position
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 14px;
+
+    margin-top: 80px;
+    margin-bottom: 0;
+
+    letter-spacing: 2px;
+
+    color: #666;
+}
+.team__name
+{
+    font-family: 'ProximaNova-Black', sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    text-transform: uppercase;
+}
+.team__slogan
+{
+    font-size: 18px;
+
+    position: relative;
+    z-index: 10;
+
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.team__photo
+{
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+
+    overflow: hidden;
+
+    width: 720px;
+    height: 670px;
+
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .header
 {
@@ -426,6 +489,10 @@ h6
     {
         bottom: 150px;
     }
+}
+.footer--after-scroll
+{
+    bottom: 0;
 }
 .footer__menu
 {
