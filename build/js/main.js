@@ -15433,4 +15433,6 @@ $(document).ready(function() {
 
     /* Custom */
 
+    $('#fullpage').fullpage();
+
 });

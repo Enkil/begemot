@@ -6,4 +6,6 @@ $(document).ready(function() {
 
     /* Custom */
 
+    //= pages--external/fullpage.js
+
 });

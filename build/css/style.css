@@ -41,20 +41,6 @@ This must be run when you have at least 2 sprites.
 
 .sprites(@spritesheet-sprites);
 */
-.svg-sprite--html5
-{
-    width: 47px;
-    height: 47px;
-
-    background-image: url('../img/sprites/svg/svg-sprite.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 47px 47px;
-}
-.no-svg .svg-sprite--html5
-{
-    background-image: url('../img/sprites/svg/svg-sprite.png');
-}
 .png-sprite:before
 {
     display: inline-block;
@@ -71,20 +57,6 @@ This must be run when you have at least 2 sprites.
     content: '';
 
     background-size: contain!important;
-}
-.svg-sprite--html5-icon:before
-{
-    width: 47px;
-    height: 47px;
-
-    background-image: url('../img/sprites/svg/svg-sprite.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 47px 47px;
-}
-.no-svg .svg-sprite--html5-icon:before
-{
-    background-image: url('../img/sprites/svg/svg-sprite.png');
 }
 /**
  * @license
@@ -180,6 +152,9 @@ h1
     font-size: 56px;
     line-height: 72pt;
 
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: #1d1e23;
 }
 h2
@@ -187,6 +162,9 @@ h2
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 32px;
     line-height: 40pt;
+
+    margin-top: 0;
+    margin-bottom: 0;
 
     color: #1d1e23;
 }
@@ -196,6 +174,9 @@ h3
     font-size: 28px;
     line-height: 40pt;
 
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: #1d1e23;
 }
 h4
@@ -203,6 +184,9 @@ h4
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 24px;
     line-height: 32pt;
+
+    margin-top: 0;
+    margin-bottom: 0;
 
     color: #1d1e23;
 }
@@ -212,6 +196,9 @@ h5
     font-size: 18px;
     line-height: 24pt;
 
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: #1d1e23;
 }
 h6
@@ -219,6 +206,9 @@ h6
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 24pt;
+
+    margin-top: 0;
+    margin-bottom: 0;
 
     color: #1d1e23;
 }
@@ -228,6 +218,9 @@ h6
     font-size: 18px;
     line-height: 28pt;
 
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: #2b343c;
 }
 .text
@@ -235,6 +228,9 @@ h6
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 16px;
     line-height: 24pt;
+
+    margin-top: 0;
+    margin-bottom: 0;
 
     color: #2b343c;
 }
@@ -260,7 +256,7 @@ h6
 }
 .we-headers
 {
-    margin-top: 150px;
+    margin-top: -150px;
 }
 .we-main-text
 {
