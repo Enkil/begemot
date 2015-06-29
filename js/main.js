@@ -16623,7 +16623,7 @@ $(document).ready(function() {
 
     /* Custom */
 
-    function startFuulPage () {} $('#we-fullpage').fullpage({
+    $('#we-fullpage').fullpage({
         //Navigation
         menu: '#we-menu',
         lockAnchors: false,
@@ -16635,7 +16635,7 @@ $(document).ready(function() {
         css3: true,
         scrollingSpeed: 700,
         autoScrolling: true,
-        fitToSection: true,
+        fitToSection: false,
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
@@ -16646,6 +16646,7 @@ $(document).ready(function() {
         scrollOverflow: true,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
+        normalScrollElements: '.vacancy-modal',
     
         //Accessibility
         keyboardScrolling: true,
