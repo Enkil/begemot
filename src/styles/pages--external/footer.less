@@ -15,6 +15,9 @@
   left: calc(~"50% - 285px");
   z-index: 10;
   width: 570px;
+  &--after-scroll{
+    bottom: 0;
+  }
 
   &__menu{
     display: inline-block;
@@ -28,6 +31,10 @@
     &:last-child{
       margin-right: 0;
     }
+    &.active > .footer__menu-link{
+      text-decoration: none;
+      color: @red;
+    }
   }
   &__menu-link{
     .ProximaNova-Regular;
@@ -37,9 +44,9 @@
     letter-spacing: 2px;
     text-decoration: underline;
     text-transform: uppercase;
+    outline: none;
     .site-transition;
-    &:hover{
-      color: @red;
-    }
+    &:hover{  color: @red;  }
+    &:focus{  color: @dark; outline: none; }
   }
 }

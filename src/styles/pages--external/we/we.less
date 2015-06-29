@@ -1,13 +1,15 @@
 .we-headers{
-  margin-top: -150px;
+  margin-top: 135px;
 }
 .we-main-text{
   margin-top: 35px;
 }
 .half-bordered{
   border: 10px solid @red;
-  border-bottom: none;
+  border-bottom: none!important;
   height: 100px;
+}
+.half-bordered-container{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -18,4 +20,236 @@
   position: relative;
   left: calc(~"50% - 16px");
   bottom: 51px;
+}
+
+.team{
+  height: 610px;
+  border: 10px solid @red;
+  margin-top: 125px;
+  margin-bottom: 130px;
+  position: relative;
+
+  &__member{
+    width: 760px;
+    height: 100%;
+    text-align: center;
+  }
+
+  &__position{
+    .ProximaNova-Regular;
+    font-size: 14px;
+    color: @dark;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  &__name{
+    .ProximaNova-Black;
+    font-size: 120px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: normal;
+    font-weight: 600;
+    position: relative;
+    z-index: 10;
+  }
+  &__slogan{
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+  }
+  &__photo{
+    width: 720px;
+    height: 670px;
+    overflow: hidden;
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+// Styles for fullPage.js
+#we-fullpage {
+
+  .fp-controlArrow{
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+    width: 72px!important;
+    height: 72px!important;
+    border-style: solid;
+    margin-top: -38px;
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    background-color: @white;
+  }
+  .fp-controlArrow.fp-prev {
+    border: none;
+    .site-transition;
+    &:hover{
+      background-color: @red;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 5%;
+      left: 0;
+      z-index: 5;
+      background-image: url(../img/images/team-slider-arrow.png);
+      background-repeat: no-repeat;
+      background-position: 28px 50%;
+      border: none;
+    }
+    &:hover:before{
+      background-image: url(../img/images/team-slider-arrow--hover.png);
+      transform: rotate(180deg);
+      left: -3%;
+    }
+  }
+  .fp-controlArrow.fp-next {
+    border: none;
+    .site-transition;
+    &:hover{
+      background-color: @red;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 5%;
+      right: -3%;
+      z-index: 5;
+      background-image: url(../img/images/team-slider-arrow.png);
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      background-position: 28px 50%;
+      border: none;
+    }
+    &:hover:before{
+      background-image: url(../img/images/team-slider-arrow--hover.png);
+      transform: rotate(360deg);
+    }
+  }
+
+  .fp-slidesNav{
+    position: relative;
+    margin-left: 0!important;
+    text-align: center;
+    left: 0;
+  }
+  .fp-slidesNav.bottom{
+    bottom: 150px;
+    @media (max-height: 940px) {
+      bottom: 120px;
+    }
+    @media (max-height: 900px) {
+      bottom: 95px;
+    }
+    @media (max-height: 870px) {
+      display: none;
+    }
+
+    li{
+      width: 50px;
+      height: 2px;
+      margin-right: 5px;
+    }
+
+    span {
+      .site-transition;
+      width: 50px;
+      height: 2px;
+      background-color: @white;
+      border-radius: 0;
+      margin: 0;
+      margin-right: 5px;
+      &:hover{
+        height: 8px;
+        border-radius: 0;
+      }
+    }
+    a.active span{
+      background-color: @red;
+      border-radius: 0;
+    }
+  }
+}
+
+.member-wrapper{  margin-top: 80px; }
+.member{
+  height: 260px;
+  background-color: transparent;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  &:hover{
+    .member__wrapper{  background-color: @red;}
+    .member__name{  color: @white; }
+    .member__role{  display: none;  }
+    .member__arrow{ display: inline-block;  }
+    .member__photo-bg{  display: none;  }
+    .member__photo{  opacity: 1; }
+  }
+  &__wrapper{
+    padding-top: 30px;
+    text-align: center;
+    height: 260px;
+    margin: 0 auto;
+    background-color: @white;
+    width: 185px;
+    .site-transition;
+  }
+  &__photo{
+    display: inline-block;
+    position: relative;
+    height: 122px;
+    width: 122px;
+    border-radius: 50%;
+    opacity: .35;
+    z-index: 5;
+    .site-transition;
+  }
+  &__photo-bg{
+    display: inline-block;
+    background-color: @red;
+    width: 122px;
+    height: 122px;
+    position: relative;
+    top: -122px;
+    border-radius: 50%;
+    .site-transition;
+  }
+  &__name{
+    .ProximaNova-Black;
+    line-height: 36px;
+    font-weight: 600;
+    position: relative;
+    top: -130px;
+    z-index: 5;
+    .site-transition;
+  }
+  &__role{
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    top: -117px;
+    line-height: normal;
+    .site-transition;
+  }
+  &__arrow{
+    display: none;
+    position: relative;
+    bottom: 112px;
+    .sprite(@sprite-member-arrow);
+    .site-transition;
+  }
 }
