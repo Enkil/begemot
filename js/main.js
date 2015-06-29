@@ -16695,13 +16695,13 @@ $(document).ready(function() {
         $('main').removeClass('hidden');
     });
     
-    $(document).keyup(function(event) {
-        if(event.keyCode == 27) {
-            $('.vacancy-modal').removeClass('vacancy-modal--active');
-            $('.footer').removeClass('hidden');
-            $('.header').removeClass('hidden');
-            $('main').removeClass('hidden');
-        }
-    });
+    //$(document).keyup(function(event) {
+    //    if(event.keyCode == 27) {
+    //        $('.vacancy-modal').removeClass('vacancy-modal--active');
+    //        $('.footer').removeClass('hidden');
+    //        $('.header').removeClass('hidden');
+    //        $('main').removeClass('hidden');
+    //    }
+    //});
 
 });
