@@ -259,6 +259,8 @@ h6
 .we-headers
 {
     margin-top: 135px;
+
+    text-align: center;
 }
 .we-main-text
 {
@@ -289,6 +291,54 @@ h6
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: 0 0;
+}
+.arrow:hover
+{
+    -webkit-animation-name: arrow-movement;
+            animation-name: arrow-movement;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+.arrow > a
+{
+    display: inline-block;
+
+    width: 32px;
+    height: 32px;
+}
+@-webkit-keyframes arrow-movement
+{
+    from
+    {
+        bottom: 51px;
+    }
+    50%
+    {
+        bottom: 41px;
+    }
+    to
+    {
+        bottom: 61px;
+    }
+}
+@keyframes arrow-movement
+{
+    from
+    {
+        bottom: 51px;
+    }
+    50%
+    {
+        bottom: 41px;
+    }
+    to
+    {
+        bottom: 61px;
+    }
 }
 .team
 {
@@ -640,6 +690,41 @@ h6
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -32px 0;
+}
+.vacancy-wrapper
+{
+    margin-top: 35px;
+}
+.vacancy
+{
+    height: 340px;
+    padding-top: 65px;
+
+    cursor: pointer;
+    text-align: center;
+
+    border: 10px solid #f52d42;
+}
+.vacancy__name
+{
+    margin-bottom: 40px;
+}
+.vacancy__offer
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 24px;
+
+    margin-bottom: 50px;
+}
+.vacancy__arrow
+{
+    display: inline-block;
+
+    width: 26px;
+    height: 9px;
+
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -32px -9px;
 }
 .header
 {
