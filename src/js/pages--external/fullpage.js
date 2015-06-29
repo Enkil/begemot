@@ -1,4 +1,4 @@
-function startFuulPage () {} $('#we-fullpage').fullpage({
+$('#we-fullpage').fullpage({
     //Navigation
     menu: '#we-menu',
     lockAnchors: false,
@@ -10,7 +10,7 @@ function startFuulPage () {} $('#we-fullpage').fullpage({
     css3: true,
     scrollingSpeed: 700,
     autoScrolling: true,
-    fitToSection: true,
+    fitToSection: false,
     scrollBar: false,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
@@ -21,11 +21,12 @@ function startFuulPage () {} $('#we-fullpage').fullpage({
     scrollOverflow: true,
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
+    normalScrollElements: '.vacancy-modal',
 
     //Accessibility
     keyboardScrolling: true,
     animateAnchor: true,
-    recordHistory: true,
+    recordHistory: false,
 
     //Design
     controlArrows: true,

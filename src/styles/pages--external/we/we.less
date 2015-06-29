@@ -29,7 +29,7 @@
   }
   > a{
     width: 32px;
-    height: 32px;
+    height: 102px;
     display: inline-block;
   }
 }
@@ -278,7 +278,7 @@
   }
 }
 
-.vacancy-wrapper{  margin-top: 35px;  }
+.vacancy-wrapper{  margin-top: 35px;  margin-bottom: 150px; }
 .vacancy{
   height: 340px;
   border: 10px solid @red;
@@ -303,13 +303,16 @@
   height: 100%;
   width: 100%;
   background-color: @white;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  overflow: auto;
   display: none;
 //  position: absolute;
   &--active{
     display: block;
+  }
+  &__wrapper{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    overflow: auto;
+    height: 100%;
   }
   &__title{
     .ProximaNova-Bold;

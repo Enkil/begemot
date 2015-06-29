@@ -3,6 +3,8 @@ $('.vacancy').click(function(event){
     $('.header').addClass('hidden');
     $('main').addClass('hidden');
     $('.vacancy-modal').addClass('vacancy-modal--active');
+    $('.vacancy-modal__wrapper').off('mousewheel', callback);
+    $('.vacancy-modal__wrapper').on('mousewheel', callback);
 });
 
 $('.vacancy-modal__cross').click(function(event){
