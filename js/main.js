@@ -16681,5 +16681,27 @@ $(document).ready(function() {
         fittype: 'cover', // either contain, cover, fill or none
         disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
     });
+    $('.vacancy').click(function(event){
+        $('.footer').addClass('hidden');
+        $('.header').addClass('hidden');
+        $('main').addClass('hidden');
+        $('.vacancy-modal').addClass('vacancy-modal--active');
+    });
+    
+    $('.vacancy-modal__cross').click(function(event){
+        $('.vacancy-modal').removeClass('vacancy-modal--active');
+        $('.footer').removeClass('hidden');
+        $('.header').removeClass('hidden');
+        $('main').removeClass('hidden');
+    });
+    
+    $(document).keyup(function(event) {
+        if(event.keyCode == 27) {
+            $('.vacancy-modal').removeClass('vacancy-modal--active');
+            $('.footer').removeClass('hidden');
+            $('.header').removeClass('hidden');
+            $('main').removeClass('hidden');
+        }
+    });
 
 });
