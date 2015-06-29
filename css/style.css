@@ -239,6 +239,7 @@ h6
 {
     width: 70px;
     height: 2px;
+    margin-top: 15px;
 
     border-bottom: 2px solid #f52d42;
 }
@@ -257,7 +258,7 @@ h6
 }
 .we-headers
 {
-    margin-top: -150px;
+    margin-top: 135px;
 }
 .we-main-text
 {
@@ -294,7 +295,7 @@ h6
     position: relative;
 
     height: 610px;
-    margin-top: 170px;
+    margin-top: 125px;
     margin-bottom: 130px;
 
     border: 10px solid #f52d42;
@@ -514,6 +515,131 @@ h6
 {
     border-radius: 0;
     background-color: #f52d42;
+}
+.member-wrapper
+{
+    margin-top: 80px;
+}
+.member
+{
+    height: 260px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+
+    cursor: pointer;
+    text-align: center;
+
+    background-color: transparent;
+}
+.member:hover .member__wrapper
+{
+    background-color: #f52d42;
+}
+.member:hover .member__name
+{
+    color: #fff;
+}
+.member:hover .member__role
+{
+    display: none;
+}
+.member:hover .member__arrow
+{
+    display: inline-block;
+}
+.member:hover .member__photo-bg
+{
+    display: none;
+}
+.member:hover .member__photo
+{
+    opacity: 1;
+}
+.member__wrapper
+{
+    width: 185px;
+    height: 260px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+    text-align: center;
+
+    background-color: #fff;
+}
+.member__photo
+{
+    position: relative;
+    z-index: 5;
+
+    display: inline-block;
+
+    width: 122px;
+    height: 122px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    opacity: .35;
+    border-radius: 50%;
+}
+.member__photo-bg
+{
+    position: relative;
+    top: -122px;
+
+    display: inline-block;
+
+    width: 122px;
+    height: 122px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    border-radius: 50%;
+    background-color: #f52d42;
+}
+.member__name
+{
+    font-family: 'ProximaNova-Black', sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+
+    position: relative;
+    z-index: 5;
+    top: -130px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+}
+.member__role
+{
+    font-size: 12px;
+    line-height: normal;
+
+    position: relative;
+    top: -117px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+    text-transform: uppercase;
+}
+.member__arrow
+{
+    position: relative;
+    bottom: 112px;
+
+    display: none;
+
+    width: 26px;
+    height: 9px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -32px 0;
 }
 .header
 {

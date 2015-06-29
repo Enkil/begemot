@@ -16654,10 +16654,12 @@ $(document).ready(function() {
     
         //Design
         controlArrows: true,
-        verticalCentered: true,
+        verticalCentered: false,
         resize : false,
         responsiveWidth: 0,
         responsiveHeight: 0,
+        paddingTop: '75px',
+        //paddingBottom: '70px',
     
         //Custom selectors
         sectionSelector: '.section',
