@@ -9,5 +9,6 @@ $(document).ready(function() {
     //= pages--external/fullpage.js
     //= pages--external/footer-scroll-to-bottom.js
     //= pages--external/object-fit.js
+    //= pages--external/vacancy-modal.js
 
 });

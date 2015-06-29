@@ -1,4 +1,4 @@
-$('#we-fullpage').fullpage({
+function startFuulPage () {} $('#we-fullpage').fullpage({
     //Navigation
     menu: '#we-menu',
     lockAnchors: false,

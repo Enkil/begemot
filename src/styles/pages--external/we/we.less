@@ -1,5 +1,6 @@
 .we-headers{
   margin-top: 135px;
+  text-align: center;
 }
 .we-main-text{
   margin-top: 35px;
@@ -20,6 +21,29 @@
   position: relative;
   left: calc(~"50% - 16px");
   bottom: 51px;
+  &:hover{
+    animation-name: arrow-movement;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  > a{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+  }
+}
+
+@keyframes arrow-movement {
+  from {
+    bottom: 51px;
+  }
+  50% {
+    bottom: 41px;
+  }
+  to {
+    bottom: 61px;
+  }
 }
 
 .team{
@@ -251,5 +275,87 @@
     bottom: 112px;
     .sprite(@sprite-member-arrow);
     .site-transition;
+  }
+}
+
+.vacancy-wrapper{  margin-top: 35px;  }
+.vacancy{
+  height: 340px;
+  border: 10px solid @red;
+  text-align: center;
+  padding-top: 65px;
+  cursor: pointer;
+  &__name{
+    margin-bottom: 40px;
+  }
+  &__offer{
+    .ProximaNova-Regular;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  &__arrow{
+    display: inline-block;
+    .sprite(@sprite-vacancy-arrow);
+  }
+}
+
+.vacancy-modal{
+  height: 100%;
+  width: 100%;
+  background-color: @white;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  overflow: auto;
+  display: none;
+//  position: absolute;
+  &--active{
+    display: block;
+  }
+  &__title{
+    .ProximaNova-Bold;
+    font-size: 56px;
+    margin-bottom: 60px;
+  }
+  &__subtitle{
+    .ProximaNova-Bold;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__text{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__btn{
+    .ProximaNova-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 370px;
+    padding-left: 30px;
+    border: 4px solid @red;
+    position: relative;
+    margin-top: 65px;
+    background-color: transparent;
+    text-align: left;
+    outline: none;
+  }
+  &__arrow{
+    .sprite(@sprite-vacancy-modal-arrow);
+    position: absolute;
+    right: 30px;
+    top: calc(~"50% - 5px");
+    display: inline-block;
+  }
+  &__cross{
+    .sprite(@sprite-vacancy-modal-cross);
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    display: inline-block;
+    cursor: pointer;
   }
 }
