@@ -679,6 +679,12 @@ h6
 {
     margin-right: 0;
 }
+.footer__menu-item.active > .footer__menu-link
+{
+    text-decoration: none;
+
+    color: #f52d42;
+}
 .footer__menu-link
 {
     font-family: 'ProximaNova-Regular', sans-serif;
@@ -692,8 +698,14 @@ h6
     text-transform: uppercase;
 
     color: #666;
+    outline: none;
 }
 .footer__menu-link:hover
 {
     color: #f52d42;
+}
+.footer__menu-link:focus
+{
+    color: #666;
+    outline: none;
 }

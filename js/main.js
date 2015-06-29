@@ -16625,7 +16625,7 @@ $(document).ready(function() {
 
     $('#we-fullpage').fullpage({
         //Navigation
-        menu: false,
+        menu: '#we-menu',
         lockAnchors: false,
         anchors:['we', 'team', 'graduates', 'vacancies'],
         slidesNavigation: true,
