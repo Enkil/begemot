@@ -16651,7 +16651,7 @@ $(document).ready(function() {
         //Accessibility
         keyboardScrolling: true,
         animateAnchor: true,
-        recordHistory: true,
+        recordHistory: false,
     
         //Design
         controlArrows: true,
