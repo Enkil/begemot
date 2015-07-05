@@ -229,7 +229,7 @@
     height: 260px;
     margin: 0 auto;
     background-color: @white;
-    width: 185px;
+    width: 80%;
     .site-transition;
   }
   &__photo{
@@ -285,17 +285,26 @@
   text-align: center;
   padding-top: 65px;
   cursor: pointer;
+  &:hover{
+    background-color: @red;
+    .vacancy__name{color: @white}
+    .vacancy__offer{color: @white}
+    .vacancy__arrow{.sprite(@sprite-vacancy-arrow-hover);}
+  }
   &__name{
     margin-bottom: 40px;
+    .site-transition;
   }
   &__offer{
     .ProximaNova-Regular;
     font-size: 24px;
     margin-bottom: 50px;
+    .site-transition;
   }
   &__arrow{
     display: inline-block;
     .sprite(@sprite-vacancy-arrow);
+    .site-transition;
   }
 }
 
@@ -345,6 +354,12 @@
     background-color: transparent;
     text-align: left;
     outline: none;
+    .site-transition;
+    &:hover{
+      background-color: @red;
+      color: @white;
+      .vacancy-modal__arrow{.sprite(@sprite-vacancy-arrow-hover);}
+    }
   }
   &__arrow{
     .sprite(@sprite-vacancy-modal-arrow);
@@ -352,6 +367,7 @@
     right: 30px;
     top: calc(~"50% - 5px");
     display: inline-block;
+    .site-transition;
   }
   &__cross{
     .sprite(@sprite-vacancy-modal-cross);

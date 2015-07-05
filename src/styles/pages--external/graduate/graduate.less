@@ -1,0 +1,166 @@
+.graduate-section{
+  margin-top: 70px;
+  position: relative;
+}
+
+.graduate-about{
+  margin-top: 75px;
+}
+
+.graduate-border{
+  width: 400px;
+  height: 310px;
+  border: 8px solid @red;
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  @media (max-width: 1200px) {
+    width: 350px;
+  }
+}
+
+.graduate{
+  height: 485px;
+  background-color: @white;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 120px;
+  &:hover{
+    background-color: @red;
+    .graduate__name{  color: @white; }
+    .graduate__photo-bg{  opacity: 0;  }
+    .graduate__photo{  opacity: 1; }
+    .graduate__role{  color: @white;  }
+  }
+
+  &__photo{
+    display: inline-block;
+    position: relative;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    opacity: .35;
+    z-index: 15;
+    .site-transition;
+  }
+  &__photo-bg{
+    display: inline-block;
+    background-color: @red;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    position: relative;
+    top: -230px;
+    .site-transition;
+  }
+  &__name{
+    .ProximaNova-Black;
+    font-size: 52px;
+    font-weight: 600;
+    position: relative;
+    bottom: 270px;
+    line-height: 55px;
+    z-index: 25;
+    .site-transition;
+    @media (max-width: 1200px) {
+      font-size: 42px;
+    }
+  }
+  &__role{
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    top: -230px;
+    line-height: normal;
+    .site-transition;
+  }
+}
+
+.graduate-text{
+
+  &__title{
+    .ProximaNova-Regular;
+    font-size: 28px;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__text{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: @dark;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.interview{
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.interview{
+  margin-bottom: 20px;
+  position: relative;
+
+  &__bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    filter: grayscale(100%);
+    opacity: .1;
+  }
+  &__wrapper{
+    padding: 10px 0;
+  }
+  &__block{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border: 8px solid @red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    min-height: 210px;
+    cursor: pointer;
+    @media (max-width: 1200px) {
+      min-height: 250px;
+    }
+    &:hover{
+      background-color: @red;
+      .interview__text{ color: @white }
+      .interview__date{ color: @white }
+      .interview__line{ background-color: @white; }
+    }
+  }
+  &__text{
+    .ProximaNova-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    .site-transition;
+  }
+  &__date{
+    .ProximaNova-Regular;
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    .site-transition;
+  }
+  &__line{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    height: 2px;
+    width: 40px;
+    background-color: @red;
+    .site-transition;
+  }
+}
