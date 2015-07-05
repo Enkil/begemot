@@ -669,7 +669,7 @@ h6
 }
 .member__wrapper
 {
-    width: 185px;
+    width: 80%;
     height: 260px;
     margin: 0 auto;
     padding-top: 30px;
@@ -1076,4 +1076,151 @@ h6
 {
     color: #666;
     outline: none;
+}
+.graduate-section
+{
+    position: relative;
+
+    margin-top: 70px;
+}
+.graduate-about
+{
+    margin-top: 75px;
+}
+.graduate-border
+{
+    position: absolute;
+    z-index: 1;
+    top: -35px;
+
+    width: 400px;
+    height: 310px;
+
+    border: 8px solid #f52d42;
+}
+@media (max-width: 1200px)
+{
+    .graduate-border
+    {
+        width: 350px;
+    }
+}
+.graduate
+{
+    position: relative;
+    z-index: 10;
+
+    height: 485px;
+    margin-bottom: 120px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+
+    text-align: center;
+
+    background-color: #fff;
+}
+.graduate:hover
+{
+    background-color: #f52d42;
+}
+.graduate:hover .graduate__name
+{
+    color: #fff;
+}
+.graduate:hover .graduate__photo-bg
+{
+    opacity: 0;
+}
+.graduate:hover .graduate__photo
+{
+    opacity: 1;
+}
+.graduate:hover .graduate__role
+{
+    color: #fff;
+}
+.graduate__photo
+{
+    position: relative;
+    z-index: 15;
+
+    display: inline-block;
+
+    width: 230px;
+    height: 230px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    opacity: .35;
+    border-radius: 50%;
+}
+.graduate__photo-bg
+{
+    position: relative;
+    top: -230px;
+
+    display: inline-block;
+
+    width: 230px;
+    height: 230px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    border-radius: 50%;
+    background-color: #f52d42;
+}
+.graduate__name
+{
+    font-family: 'ProximaNova-Black', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 55px;
+
+    position: relative;
+    z-index: 25;
+    bottom: 270px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+}
+@media (max-width: 1200px)
+{
+    .graduate__name
+    {
+        font-size: 42px;
+    }
+}
+.graduate__role
+{
+    font-size: 14px;
+    line-height: normal;
+
+    position: relative;
+    top: -230px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+    text-transform: uppercase;
+}
+.graduate-text__title
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 28px;
+    line-height: normal;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.graduate-text__text
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    color: #666;
 }
