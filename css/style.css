@@ -1266,6 +1266,8 @@ h6
     padding-bottom: 20px;
     padding-left: 15px;
 
+    cursor: pointer;
+
     border: 8px solid #f52d42;
 }
 @media (max-width: 1200px)
@@ -1275,11 +1277,30 @@ h6
         min-height: 250px;
     }
 }
+.interview__block:hover
+{
+    background-color: #f52d42;
+}
+.interview__block:hover .interview__text
+{
+    color: #fff;
+}
+.interview__block:hover .interview__date
+{
+    color: #fff;
+}
+.interview__block:hover .interview__line
+{
+    background-color: #fff;
+}
 .interview__text
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 18px;
     line-height: 22px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
 }
 .interview__date
 {
@@ -1288,4 +1309,23 @@ h6
 
     position: absolute;
     bottom: 20px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+}
+.interview__line
+{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    display: inline-block;
+
+    width: 40px;
+    height: 2px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    background-color: #f52d42;
 }
