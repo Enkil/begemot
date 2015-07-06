@@ -1,0 +1,73 @@
+.employee{
+  margin-top: 65px;
+  position: relative;
+  z-index: 10;
+
+  &__name{
+    .ProximaNova-Black;
+    font-size: 120px;
+    line-height: 120px;
+    position: relative;
+    z-index: 10;
+    font-weight: 600;
+  }
+  &__role{
+    .ProximaNova-Regular;
+    font-size: 28px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 10;
+  }
+  &__text{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    margin-top: 25px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.employee-nav{
+  list-style-type: none;
+  padding: 0;
+  margin-top: 185px;
+//  margin-bottom: 100px;
+  position: relative;
+  bottom: 100px;
+  &__item{
+    display: inline-block;
+  }
+  &__arrow{
+    .sprite(@sprite-employee-nav-arow);
+    display: inline-block;
+    margin-right: 20px;
+  }
+  &__link{
+    .ProximaNova-Regular;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 40px;
+    color: @dark;
+    text-decoration: underline;
+  }
+}
+
+.employee-photo{
+  position: relative;
+  &__img{
+    position: absolute;
+    right: -200px;
+    max-height: 980px;
+    top: -65px;
+    z-index: 5;
+  }
+  &__border{
+    display: inline-block;
+    width: 940px;
+    height: 570px;
+    border: 10px solid @red;
+    position: absolute;
+    right: -195px;
+    z-index: 1;
+  }
+}
