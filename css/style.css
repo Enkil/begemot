@@ -1493,14 +1493,14 @@ h6
     font-size: 11px;
 
     position: absolute;
-    top: 115px;
-    left: -40px;
+    top: 70px;
+    left: -80px;
+
+    width: 160px;
 
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
     letter-spacing: 3px;
     text-transform: uppercase;
-
-    opacity: .4;
 }
