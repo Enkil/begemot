@@ -297,14 +297,6 @@ h6
 
     color: #2b343c;
 }
-.headers-line
-{
-    width: 70px;
-    height: 2px;
-    margin-top: 15px;
-
-    border-bottom: 2px solid #f52d42;
-}
 .bg-color-grey
 {
     background-color: #ebeef1;
@@ -313,6 +305,14 @@ h6
 {
     -webkit-transition: all .5s ease;
             transition: all .5s ease;
+}
+.headers-line
+{
+    width: 45px;
+    height: 2px;
+    margin-top: 15px;
+
+    border-bottom: 2px solid #f52d42;
 }
 .container
 {
@@ -1245,6 +1245,7 @@ h6
 
     -webkit-transition: all .5s ease;
             transition: all .5s ease;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 .graduate-text--employee
