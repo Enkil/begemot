@@ -191,7 +191,7 @@ This must be run when you have at least 2 sprites.
 }
 .ProximaNova-Black
 {
-    font-family: 'ProximaNova-Black', sans-serif;
+    font-family: 'ProximaNova-Black';
 }
 .ProximaNova-Bold
 {
@@ -433,7 +433,7 @@ h6
 }
 .team__name
 {
-    font-family: 'ProximaNova-Black', sans-serif;
+    font-family: 'ProximaNova-Black';
     font-size: 120px;
     font-weight: 600;
     line-height: normal;
@@ -714,7 +714,7 @@ h6
 }
 .member__name
 {
-    font-family: 'ProximaNova-Black', sans-serif;
+    font-family: 'ProximaNova-Black';
     font-weight: 600;
     line-height: 36px;
 
@@ -1220,7 +1220,7 @@ h6
 }
 .graduate__name
 {
-    font-family: 'ProximaNova-Black', sans-serif;
+    font-family: 'ProximaNova-Black';
     font-size: 52px;
     font-weight: 600;
     line-height: 55px;
