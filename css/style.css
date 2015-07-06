@@ -1135,6 +1135,7 @@ h6
     position: absolute;
     z-index: 1;
     top: -35px;
+    left: 15px;
 
     width: 400px;
     height: 310px;
