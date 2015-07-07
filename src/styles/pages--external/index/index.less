@@ -1,0 +1,47 @@
+.index-lead{
+  text-align: center;
+  border: 10px solid @white;
+
+  &__title{
+    .ProximaNova-Bold;
+    font-size: 64px;
+    margin-top: 10%;
+  }
+  &__slogan{
+    .ProximaNova-Regular;
+    font-size: 36px;
+    margin-bottom: 10%;
+  }
+}
+
+.arrows-down-index{
+  .sprite(@sprite-index-arrow);
+//  position: relative;
+//  left: calc(~"50% - 12px");
+//  bottom: -10%;
+  margin: 0 auto;
+  margin-top: 5%;
+  &:hover{
+    animation-name: index-arrow-movement;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  > a{
+    width: 27px;
+    height: 25px;
+    display: inline-block;
+  }
+}
+
+@keyframes index-arrow-movement {
+  from {
+    margin-top: 5%;
+  }
+  50% {
+    margin-top: 6%;
+  }
+  to {
+    margin-top: 4%;
+  }
+}

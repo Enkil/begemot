@@ -70,3 +70,83 @@
     }
   }
 }
+
+.header-index{
+  height: 75px;
+  text-align: center;
+  min-width: 1024px;
+  @media (max-width: 1024px) {
+    width: 1024px;
+  }
+
+  &__logo{
+    display: inline-block;
+    width: 243px;
+    height: 37px;
+  }
+  &__logo-link{
+    position: absolute;
+    left: 60px;
+    top: 18px;
+    @media (max-width: 1150px) {
+      left: 40px;
+    }
+  }
+  &__menu{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+  }
+  &__menu-item{
+    display: inline-block;
+    margin-right: 80px;
+    @media (max-width: 1150px) {
+      margin-right: 40px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__menu-link{
+    .ProximaNova-Bold;
+    color: @dark;
+    font-size: 14px;
+    line-height: 75px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    .site-transition;
+    &:hover{
+      color: @red;
+    }
+  }
+  &__btn{
+    .ProximaNova-Bold;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    @media (max-width: 1150px) {
+      right: 40px;
+    }
+    @media (max-width: 880px) {
+      display: none;
+    }
+    font-size: 14px;
+    color: @black;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: 2px solid @black;
+    background-color: transparent;
+    outline: none;
+    .site-transition;
+    &:hover{
+      color: @red;
+      border: 2px solid @red;
+    }
+  }
+}
+
