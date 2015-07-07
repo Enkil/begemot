@@ -16623,7 +16623,7 @@ $(document).ready(function() {
 
     /* Custom */
 
-    $('#we-fullpage').fullpage({
+    $('#fullpage').fullpage({
         //Navigation
         menu: '#we-menu',
         lockAnchors: false,
@@ -16660,7 +16660,6 @@ $(document).ready(function() {
         responsiveWidth: 0,
         responsiveHeight: 0,
         paddingTop: '75px',
-        //paddingBottom: '70px',
     
         //Custom selectors
         sectionSelector: '.section',
@@ -16669,11 +16668,11 @@ $(document).ready(function() {
     
     $('#index-fullpage').fullpage({
         //Navigation
-        menu: '#we-menu',
+        //menu: '#we-menu',
         lockAnchors: false,
-        anchors:['we', 'team', 'graduates', 'vacancies'],
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
+        anchors:['1', '2', '3', '4', '5', '6'],
+        //slidesNavigation: true,
+        //slidesNavPosition: 'bottom',
     
         //Scrolling
         css3: true,
@@ -16690,7 +16689,7 @@ $(document).ready(function() {
         scrollOverflow: true,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
-        normalScrollElements: '.vacancy-modal',
+        //normalScrollElements: '.vacancy-modal',
     
         //Accessibility
         keyboardScrolling: true,
@@ -16698,8 +16697,8 @@ $(document).ready(function() {
         recordHistory: false,
     
         //Design
-        controlArrows: true,
-        verticalCentered: false,
+        //controlArrows: true,
+        //verticalCentered: false,
         resize : false,
         responsiveWidth: 0,
         responsiveHeight: 0,
