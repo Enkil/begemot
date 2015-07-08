@@ -10,4 +10,5 @@
 //= ../../bower_components/fullpage.js/vendors/jquery.slimscroll.js
 //= ../../bower_components/fullpage.js/jquery.fullPage.js
 //= ../../bower_components/object-fit/dist/polyfill.object-fit.js
+//= ../../bower_components/slick.js/slick/slick.js
 

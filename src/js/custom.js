@@ -11,5 +11,6 @@ $(document).ready(function() {
     //= pages--external/object-fit.js
     //= pages--external/vacancy-modal.js
     //= pages--external/index-header.js
+    //= pages--external/who-we-are.js
 
 });

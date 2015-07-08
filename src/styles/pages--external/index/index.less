@@ -25,7 +25,7 @@
     animation-name: index-arrow-movement;
     animation-duration:1s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
   }
   > a{
     width: 27px;
@@ -35,13 +35,124 @@
 }
 
 @keyframes index-arrow-movement {
-  from {
+  0% {
     margin-top: 5%;
   }
   50% {
     margin-top: 6%;
   }
-  to {
+  100% {
     margin-top: 4%;
+  }
+}
+
+.index-title{
+  .ProximaNova-Black;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.index-text{
+  margin-top: 35px;
+}
+
+.index-num{
+  .ProximaNova-Bold;
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 55px;
+  margin-right: 55px;
+  &__digit{
+    color: @red;
+    font-size: 30px;
+  }
+}
+
+.who-we-are{
+//  border: 10px solid @red;
+  position: relative;
+//  top: 20px;
+//  z-index: 1;
+//  margin-bottom: 40px;
+  &__img{
+    position: relative;
+    z-index: 5;
+//    width: 800px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .slick-dots{
+    text-align: center;
+    bottom: -40px;
+    li{
+      button{
+        .ProximaNova-Regular;
+        font-size: 15px;
+        line-height: 25px;
+        color: @black;
+        padding: 0;
+      }
+    }
+    li.slick-active{
+      button{
+        color: @red;
+      }
+    }
+    button:before{
+      display: none;
+    }
+  }
+
+}
+
+.who-we-are-nav{
+  position: absolute;
+  width: calc(~"100% - 30px");
+  bottom: 0;
+  &__prev{
+    .sprite(@sprite-who-we-are-nav-prev);
+    background-color: transparent;
+    border: none;
+    opacity: .9;
+    outline: none;
+  }
+  &__next{
+    .sprite(@sprite-who-we-are-nav-next);
+    background-color: transparent;
+    border: none;
+    opacity: .9;
+    float: right;
+    outline: none;
+  }
+}
+
+
+.index-subtitle{
+  .ProximaNova-Bold;
+  font-size: 18px;
+  width: 140px;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.awards{
+  padding-top: 25px;
+  &__img{
+    margin-right: 50px;
+    margin-top: 10px;
+    width: 150px;
+    height: 110px;
+    background-color: #dce2e8;
+    &:last-child{  margin-right: 0; }
+  }
+}
+
+.brands{
+  padding-top: 35px;
+  &__img{
+    margin-right: 30px;
+    margin-top: 10px;
+    &:last-child{  margin-right: 0; }
   }
 }
