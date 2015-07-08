@@ -4,6 +4,9 @@
 /* Third party */
 @import '../../bower_components/fullpage.js/jquery.fullPage.css';
 @import '../../bower_components/object-fit/dist/polyfill.object-fit.css';
+@import '../../bower_components/object-fit/dist/polyfill.object-fit.css';
+@import '../../bower_components/slick.js/slick/slick.css';
+@import '../../bower_components/slick.js/slick/slick-theme.css';
 @font-face
 {
     font-family: 'begemot-icon-font';
@@ -1640,8 +1643,8 @@ h6
             animation-name: index-arrow-movement;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
 }
@@ -1654,7 +1657,7 @@ h6
 }
 @-webkit-keyframes index-arrow-movement
 {
-    from
+    0%
     {
         margin-top: 5%;
     }
@@ -1662,14 +1665,14 @@ h6
     {
         margin-top: 6%;
     }
-    to
+    100%
     {
         margin-top: 4%;
     }
 }
 @keyframes index-arrow-movement
 {
-    from
+    0%
     {
         margin-top: 5%;
     }
@@ -1677,8 +1680,144 @@ h6
     {
         margin-top: 6%;
     }
-    to
+    100%
     {
         margin-top: 4%;
     }
+}
+.index-title
+{
+    font-family: 'ProximaNova-Black', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+.index-text
+{
+    margin-top: 35px;
+}
+.index-num
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 24px;
+
+    display: inline-block;
+
+    margin-top: 55px;
+    margin-right: 55px;
+}
+.index-num__digit
+{
+    font-size: 30px;
+
+    color: #f52d42;
+}
+.who-we-are
+{
+    position: relative;
+}
+.who-we-are__img
+{
+    position: relative;
+    z-index: 5;
+
+    height: 370px;
+
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.who-we-are .slick-dots
+{
+    bottom: -40px;
+
+    text-align: center;
+}
+.who-we-are .slick-dots li button
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+
+    padding: 0;
+
+    color: #000;
+}
+.who-we-are .slick-dots li.slick-active button
+{
+    color: #f52d42;
+}
+.who-we-are .slick-dots button:before
+{
+    display: none;
+}
+.who-we-are-nav
+{
+    position: absolute;
+    bottom: 0;
+
+    width: calc(100% - 30px);
+}
+.who-we-are-nav__prev
+{
+    width: 10px;
+    height: 16px;
+
+    opacity: .9;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -79px -45px;
+}
+.who-we-are-nav__next
+{
+    float: right;
+
+    width: 10px;
+    height: 16px;
+
+    opacity: .9;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -69px -45px;
+}
+.index-subtitle
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+
+    width: 140px;
+    margin-top: 20px;
+}
+.awards
+{
+    padding-top: 25px;
+}
+.awards__img
+{
+    width: 150px;
+    height: 110px;
+    margin-top: 10px;
+    margin-right: 50px;
+
+    background-color: #dce2e8;
+}
+.awards__img:last-child
+{
+    margin-right: 0;
+}
+.brands
+{
+    padding-top: 35px;
+}
+.brands__img
+{
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.brands__img:last-child
+{
+    margin-right: 0;
 }
