@@ -127,7 +127,6 @@
   }
 }
 
-
 .index-subtitle{
   .ProximaNova-Bold;
   font-size: 18px;
@@ -154,5 +153,134 @@
     margin-right: 30px;
     margin-top: 10px;
     &:last-child{  margin-right: 0; }
+  }
+}
+
+.apps{
+  margin-bottom: 75px;
+  position: relative;
+
+  &__slider{
+    position: relative;
+    bottom: 150px;
+
+    .slick-dots{
+      text-align: left;
+      bottom: 40px;
+      left: 150px;
+      //left: 80px;
+      li{
+        button{
+          .ProximaNova-Regular;
+          font-size: 15px;
+          line-height: 25px;
+          color: @black;
+          padding: 0;
+        }
+      }
+      li.slick-active{
+        button{
+          color: @red;
+        }
+      }
+      button:before{
+        display: none;
+      }
+    }
+  }
+  &__slide{
+    position: relative;
+    margin-top: 130px;
+  }
+  &__slide-wrapper{
+    border: 10px solid @red;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    padding-right: 45px;
+    margin-top: 75px;
+  }
+  &__when{
+    .ProximaNova-Bold;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__name{
+    .ProximaNova-Light;
+    font-size: 56px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+  &__about{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  &__goal{
+    margin-bottom: 35px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 30px;
+    width: 230px;
+  }
+  &__goal-title{
+    .ProximaNova-Bold;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__goal-text{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  &__case{
+    margin-bottom: 100px;
+    clear: both;
+  }
+  &__arrow{
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    .sprite(@sprite-vacancy-modal-arrow);
+    .site-transition;
+  }
+  &__case-view{
+    .ProximaNova-Regular;
+    font-size: 15px;
+    text-decoration: underline;
+    color: @black;
+  }
+  &__img{
+    position: absolute;
+    bottom: 10px;
+    right: 45px;
+    height: 120%;
+  }
+}
+
+.apps-nav{
+  position: relative;
+  //width: calc(~"100% - 30px");
+  width: 20%;
+  bottom: 250px;
+  left: 70px;
+  &__prev{
+    .sprite(@sprite-who-we-are-nav-prev);
+    background-color: transparent;
+    border: none;
+    opacity: .9;
+    outline: none;
+  }
+  &__next{
+    .sprite(@sprite-who-we-are-nav-next);
+    background-color: transparent;
+    border: none;
+    opacity: .9;
+    float: right;
+    outline: none;
   }
 }

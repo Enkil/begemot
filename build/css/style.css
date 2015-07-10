@@ -1821,3 +1821,177 @@ h6
 {
     margin-right: 0;
 }
+.apps
+{
+    position: relative;
+
+    margin-bottom: 75px;
+}
+.apps__slider
+{
+    position: relative;
+    bottom: 150px;
+}
+.apps__slider .slick-dots
+{
+    bottom: 40px;
+    left: 150px;
+
+    text-align: left;
+}
+.apps__slider .slick-dots li button
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+
+    padding: 0;
+
+    color: #000;
+}
+.apps__slider .slick-dots li.slick-active button
+{
+    color: #f52d42;
+}
+.apps__slider .slick-dots button:before
+{
+    display: none;
+}
+.apps__slide
+{
+    position: relative;
+
+    margin-top: 130px;
+}
+.apps__slide-wrapper
+{
+    margin-top: 75px;
+    padding-top: 50px;
+    padding-right: 45px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+
+    border: 10px solid #f52d42;
+}
+.apps__when
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+.apps__name
+{
+    font-family: 'ProximaNova-Light', sans-serif;
+    font-size: 56px;
+    line-height: 25px;
+
+    margin-bottom: 35px;
+}
+.apps__about
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+.apps__goal
+{
+    float: left;
+
+    width: 230px;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 35px;
+}
+.apps__goal-title
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+.apps__goal-text
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+.apps__case
+{
+    clear: both;
+
+    margin-bottom: 100px;
+}
+.apps__arrow
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 26px;
+    height: 9px;
+    margin-right: 15px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -69px -36px;
+}
+.apps__case-view
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 15px;
+
+    text-decoration: underline;
+
+    color: #000;
+}
+.apps__img
+{
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+
+    height: 120%;
+}
+.apps-nav
+{
+    position: relative;
+    bottom: 250px;
+    left: 70px;
+
+    width: 20%;
+}
+.apps-nav__prev
+{
+    width: 10px;
+    height: 16px;
+
+    opacity: .9;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -79px -45px;
+}
+.apps-nav__next
+{
+    float: right;
+
+    width: 10px;
+    height: 16px;
+
+    opacity: .9;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -69px -45px;
+}

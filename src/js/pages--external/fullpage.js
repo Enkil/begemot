@@ -34,7 +34,7 @@ $('#fullpage').fullpage({
     resize : false,
     responsiveWidth: 0,
     responsiveHeight: 0,
-    paddingTop: '75px',
+    //paddingTop: '75px',
 
     //Custom selectors
     sectionSelector: '.section',
