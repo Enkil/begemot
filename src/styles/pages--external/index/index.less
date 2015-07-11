@@ -284,3 +284,111 @@
     outline: none;
   }
 }
+
+
+.why-us{
+  width: 85%;
+  border: 10px solid @white;
+  position: relative;
+  margin-top: 75px;
+  height: 500px;
+  &__left{
+    float: left;
+    width: 50%;
+    position: relative;
+  }
+  &__right{
+    float: left;
+    width: 50%;
+    position: relative;
+    left: 170px;
+    margin-top: 30px;
+  }
+  &__img{
+    position: relative;
+    z-index: 5;
+    top: -110px;
+  }
+  &__titles{
+    position: absolute;
+    top: 180px;
+    z-index: 10;
+    margin-left: 70px;
+    width: 350px;
+  }
+  &__title{
+    position: relative;
+    .ProximaNova-Black;
+    font-size: 32px;
+    line-height: 40px;
+    border-bottom: 4px solid @black;
+    display: inline-block;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s all ease;
+    text-decoration: none;
+    color: @black;
+    &--current, &:hover, &:focus{
+      color: @red;
+      border-bottom: 4px solid @red;
+      text-decoration: none;
+    }
+  }
+  &__quotes{
+    .sprite(@sprite-quotes);
+    position: absolute;
+    display: inline-block;
+    left: 550px;
+    top: 60px;
+    @media (max-width: 1200px) {
+      left: 20px;
+    }
+  }
+  &__name{
+    .ProximaNova-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 110px;
+    left: 520px;
+    text-align: right;
+    line-height: normal;
+    @media (max-width: 1200px) {
+      left: 20px;
+    }
+  }
+  &__text{
+    .ProximaNova-Light;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  &__photo{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #dce2e8;
+    margin-bottom: 10px;
+  }
+  &__client{
+    .ProximaNova-Bold;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  &__client-role{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: @red;
+    margin-bottom: 15px;
+  }
+  &__client-text{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
