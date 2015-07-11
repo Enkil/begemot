@@ -410,7 +410,9 @@ h6
     position: relative;
 
     height: 70%;
-    margin-top: 5%;
+    margin-top: 100px;
+
+    cursor: pointer;
 
     border: 10px solid #f52d42;
 }
@@ -2152,4 +2154,16 @@ h6
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 16px;
     line-height: 24px;
+}
+.trick
+{
+    position: relative;
+
+    height: 420px;
+
+    border: 4px solid #fff;
+}
+.trick__img
+{
+    position: relative;
 }
