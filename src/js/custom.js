@@ -13,6 +13,6 @@ $(document).ready(function() {
     //= pages--external/index-header.js
     //= pages--external/who-we-are.js
     //= pages--external/apps-slider.js
-    //= pages--external/why-us.js
+    ////= pages--external/why-us.js
 
 });
