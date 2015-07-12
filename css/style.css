@@ -161,8 +161,8 @@ This must be run when you have at least 2 sprites.
 {
     font-family: 'ProximaNova-Black';
 
-    src: url('fonts/proxima-nova/2E8546_0_0.eot');
-    src: url('fonts/proxima-nova/2E8546_0_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/2E8546_0_0.woff2') format('woff2'), url('fonts/proxima-nova/2E8546_0_0.woff') format('woff'), url('fonts/proxima-nova/2E8546_0_0.ttf') format('truetype');
+    src: url('fonts/proxima-nova/2EA374_0_0.eot');
+    src: url('fonts/proxima-nova/2EA374_0_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/2EA374_0_0.woff2') format('woff2'), url('fonts/proxima-nova/2EA374_0_0.woff') format('woff'), url('fonts/proxima-nova/2EA374_0_0.ttf') format('truetype');
 }
 @font-face
 {
@@ -414,7 +414,7 @@ h6
     position: relative;
 
     height: 70%;
-    margin-top: 100px;
+    margin-top: 50px;
 
     cursor: pointer;
 
@@ -432,7 +432,7 @@ h6
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 14px;
 
-    margin-top: 5%;
+    margin-top: 1%;
     margin-bottom: 0;
 
     letter-spacing: 2px;
@@ -461,8 +461,8 @@ h6
     position: relative;
     z-index: 10;
 
-    margin-top: 5%;
-    margin-bottom: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .team__photo
 {
@@ -477,7 +477,7 @@ h6
     -o-object-fit: cover;
        object-fit: cover;
 }
-#fullpage .fp-controlArrow
+#we-fullpage .fp-controlArrow
 {
     position: absolute;
     z-index: 4;
@@ -493,18 +493,20 @@ h6
     border-style: solid;
     background-color: #fff;
 }
-#fullpage .fp-controlArrow.fp-prev
+#we-fullpage .fp-controlArrow.fp-prev
 {
+    left: 0;
+
     -webkit-transition: all .5s ease;
             transition: all .5s ease;
 
     border: none;
 }
-#fullpage .fp-controlArrow.fp-prev:hover
+#we-fullpage .fp-controlArrow.fp-prev:hover
 {
     background-color: #f52d42;
 }
-#fullpage .fp-controlArrow.fp-prev:before
+#we-fullpage .fp-controlArrow.fp-prev:before
 {
     position: absolute;
     z-index: 5;
@@ -520,7 +522,7 @@ h6
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-#fullpage .fp-controlArrow.fp-prev:hover:before
+#we-fullpage .fp-controlArrow.fp-prev:hover:before
 {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -529,18 +531,20 @@ h6
     background-image: url(../img/images/team-slider-arrow--hover.png);
     background-position: 50% 50%;
 }
-#fullpage .fp-controlArrow.fp-next
+#we-fullpage .fp-controlArrow.fp-next
 {
+    right: 0;
+
     -webkit-transition: all .5s ease;
             transition: all .5s ease;
 
     border: none;
 }
-#fullpage .fp-controlArrow.fp-next:hover
+#we-fullpage .fp-controlArrow.fp-next:hover
 {
     background-color: #f52d42;
 }
-#fullpage .fp-controlArrow.fp-next:before
+#we-fullpage .fp-controlArrow.fp-next:before
 {
     position: absolute;
     z-index: 5;
@@ -558,7 +562,7 @@ h6
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-#fullpage .fp-controlArrow.fp-next:hover:before
+#we-fullpage .fp-controlArrow.fp-next:hover:before
 {
     -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
@@ -567,7 +571,7 @@ h6
     background-image: url(../img/images/team-slider-arrow--hover.png);
     background-position: 50% 50%;
 }
-#fullpage .fp-slidesNav
+#we-fullpage .fp-slidesNav
 {
     position: relative;
     left: 0;
@@ -576,17 +580,24 @@ h6
 
     text-align: center;
 }
-#fullpage .fp-slidesNav.bottom
+#we-fullpage .fp-slidesNav.bottom
 {
     bottom: 15%;
 }
-#fullpage .fp-slidesNav.bottom li
+@media (max-height: 800px)
+{
+    #we-fullpage .fp-slidesNav.bottom
+    {
+        display: none;
+    }
+}
+#we-fullpage .fp-slidesNav.bottom li
 {
     width: 50px;
     height: 2px;
     margin-right: 5px;
 }
-#fullpage .fp-slidesNav.bottom span
+#we-fullpage .fp-slidesNav.bottom span
 {
     width: 50px;
     height: 2px;
@@ -599,13 +610,13 @@ h6
     border-radius: 0;
     background-color: #fff;
 }
-#fullpage .fp-slidesNav.bottom span:hover
+#we-fullpage .fp-slidesNav.bottom span:hover
 {
     height: 8px;
 
     border-radius: 0;
 }
-#fullpage .fp-slidesNav.bottom a.active span
+#we-fullpage .fp-slidesNav.bottom a.active span
 {
     border-radius: 0;
     background-color: #f52d42;
@@ -915,7 +926,7 @@ h6
 .header
 {
     position: fixed;
-    z-index: 10;
+    z-index: 50;
     top: 0;
 
     width: 100%;
@@ -977,10 +988,9 @@ h6
     -webkit-transition: all .5s ease;
             transition: all .5s ease;
     text-decoration: underline;
-    letter-spacing: 2px;
     text-transform: uppercase;
 
-    color: #666;
+    color: #56575b;
 }
 .header__menu-link:hover
 {
@@ -1022,6 +1032,9 @@ h6
 }
 .header-index
 {
+    position: relative;
+    z-index: 50;
+
     min-width: 1024px;
     height: 75px;
 
@@ -1230,7 +1243,7 @@ h6
 {
     position: relative;
 
-    margin-top: 70px;
+    margin-top: 150px;
 }
 .graduate-about
 {
@@ -1258,7 +1271,7 @@ h6
 .graduate
 {
     position: relative;
-    z-index: 10;
+    z-index: 5;
 
     height: 485px;
     margin-bottom: 120px;
@@ -1268,26 +1281,6 @@ h6
     text-align: center;
 
     background-color: #fff;
-}
-.graduate:hover
-{
-    background-color: #f52d42;
-}
-.graduate:hover .graduate__name
-{
-    color: #fff;
-}
-.graduate:hover .graduate__photo-bg
-{
-    opacity: 0;
-}
-.graduate:hover .graduate__photo
-{
-    opacity: 1;
-}
-.graduate:hover .graduate__role
-{
-    color: #fff;
 }
 .graduate__photo
 {
@@ -1370,14 +1363,14 @@ h6
 }
 .graduate-text__text
 {
-    font-family: 'ProximaNova-Regular', sans-serif;
+    font-family: 'ProximaNova-Light', sans-serif;
     font-size: 16px;
     line-height: 24px;
 
     margin-top: 30px;
     margin-bottom: 20px;
 
-    color: #666;
+    color: #2b343c;
 }
 .interview-section
 {
@@ -1522,6 +1515,7 @@ h6
 .employee-nav
 {
     position: relative;
+    z-index: 15;
     bottom: 100px;
 
     margin-top: 185px;
@@ -1556,6 +1550,10 @@ h6
     text-decoration: underline;
 
     color: #666;
+}
+.employee-nav__link:hover
+{
+    color: #f52d42;
 }
 .employee-photo
 {
@@ -2238,4 +2236,93 @@ h6
     text-decoration: underline;
 
     color: #000;
+}
+.contact-form
+{
+    display: block;
+
+    padding: 20px;
+
+    border: 10px solid #fff;
+}
+.contact-form__label
+{
+    display: none;
+}
+.contact-form__label--display
+{
+    display: inline-block;
+}
+.contact-form__input
+{
+    font-family: 'ProximaNova-Light', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+
+    display: block;
+
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: none;
+    border-bottom: 4px solid #fff;
+    outline: none;
+    background-color: transparent;
+}
+.contact-form__input ::-webkit-input-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__input ::-moz-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__input :-moz-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__input :-ms-input-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__input--phone
+{
+    float: left;
+
+    width: 217px;
+    margin-right: 20px;
+}
+.contact-form__input--email
+{
+    float: left;
+
+    width: 218px;
+    margin-left: 20px;
+}
+.contact-form__textarea
+{
+    display: block;
+    clear: both;
+
+    width: 100%;
+    height: 170px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding-top: 25px;
+
+    resize: none;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
