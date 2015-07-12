@@ -16,17 +16,8 @@
 
 .arrows-down-index{
   .sprite(@sprite-index-arrow);
-//  position: relative;
-//  left: calc(~"50% - 12px");
-//  bottom: -10%;
   margin: 0 auto;
   margin-top: 5%;
-  &:hover{
-    animation-name: index-arrow-movement;
-    animation-duration:1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
   > a{
     width: 27px;
     height: 25px;
@@ -34,17 +25,6 @@
   }
 }
 
-@keyframes index-arrow-movement {
-  0% {
-    margin-top: 5%;
-  }
-  50% {
-    margin-top: 6%;
-  }
-  100% {
-    margin-top: 4%;
-  }
-}
 
 .index-title{
   .ProximaNova-Black;
@@ -157,16 +137,15 @@
 }
 
 .apps{
-  margin-bottom: 75px;
   position: relative;
 
   &__slider{
     position: relative;
-    bottom: 150px;
+    bottom: 180px;
 
     .slick-dots{
       text-align: left;
-      bottom: 40px;
+      bottom: 60px;
       left: 150px;
       //left: 80px;
       li{
@@ -194,9 +173,9 @@
   }
   &__slide-wrapper{
     border: 10px solid @red;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     padding-right: 45px;
     margin-top: 75px;
   }
@@ -266,7 +245,7 @@
   position: relative;
   //width: calc(~"100% - 30px");
   width: 20%;
-  bottom: 250px;
+  bottom: 300px;
   left: 70px;
   &__prev{
     .sprite(@sprite-who-we-are-nav-prev);
@@ -392,6 +371,10 @@
   }
 }
 
+.tick{
+  margin-top: 100px;
+}
+
 .trick{
   position: relative;
   border: 4px solid @white;
@@ -447,5 +430,106 @@
     font-size: 15px;
     text-decoration: underline;
     color: @black;
+  }
+}
+
+.contact-form{
+  display: block;
+  border: 10px solid @white;
+  padding: 20px;
+
+  &__label{
+    .ProximaNova-Regular;
+    font-size: 12px;
+    display: block;
+    border-bottom: 4px solid @white;
+    margin-bottom: 10px;
+    &--textarea{
+      border: none;
+    }
+    &--phone{
+      float: left;
+      margin-right: 20px;
+      width: 217px;
+    }
+    &--email{
+      float: left;
+      margin-left: 20px;
+      width: 218px;
+    }
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .ProximaNova-Light;
+    font-size: 18px;
+    line-height: 30px;
+
+    ::-webkit-input-placeholder {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    ::-moz-placeholder          {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    :-moz-placeholder           {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    :-ms-input-placeholder      {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+  &__textarea{
+    display: block;
+    clear: both;
+    height: 170px;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    resize: none;
+  }
+  &__btn{
+    .ProximaNova-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 240px;
+    padding-left: 30px;
+    border: 4px solid @red;
+    position: relative;
+    margin-top: 10px;
+    background-color: transparent;
+    text-align: left;
+    outline: none;
+    .site-transition;
+    &:hover{
+      background-color: @red;
+      color: @white;
+      .contact-form__arrow{.sprite(@sprite-vacancy-arrow-hover);}
+    }
+  }
+  &__arrow{
+    .sprite(@sprite-vacancy-modal-arrow);
+    position: absolute;
+    right: 30px;
+    top: calc(~"50% - 5px");
+    display: inline-block;
+    .site-transition;
   }
 }
