@@ -18988,7 +18988,7 @@ $(document).ready(function() {
 
     /* Custom */
 
-    if ($('#index-fullpage').length){
+    if ($('#index-fullpage2').length){
         $('#index-fullpage').fullpage({
             anchors:['1', '2', '3', '4', '5', '6'],
             //fitToSection: false,
@@ -19095,7 +19095,7 @@ $(document).ready(function() {
         setTimeout(indexHeader, 200);
     }
     
-    if ($(".header-index").length) {
+    if ($(".js-header-index").length) {
         indexHeader();
     }
     $('.slick').slick({
