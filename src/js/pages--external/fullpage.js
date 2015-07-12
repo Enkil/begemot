@@ -1,10 +1,10 @@
 if ($('#index-fullpage').length){
     $('#index-fullpage').fullpage({
-        anchors:['a', 'b', 'c', 'd', 'e', 'f'],
+        anchors:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
         //fitToSection: false,
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['1', '2', '3', '4', '5', '6'],
+        navigationTooltips:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
         showActiveTooltip: true,
         scrollOverflow: true,
     });
