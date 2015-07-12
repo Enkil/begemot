@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-    <div class="arrows-down-index"><a href="#"></a></div>
+    <div class="arrows-down-index"><a href="#b"></a></div>
 </section>
 
                 <section class="section">
@@ -416,7 +416,7 @@
 
                 <section class="section">
     <div class="container">
-        <div class="row pos-r">
+        <div class="row pos-r tick">
 
             <div class="col-xs-5">
                 <h2 class="index-title">What makes us tick</h2>
@@ -474,19 +474,32 @@
             <div class="col-xs-7">
                 <form action="#" class="contact-form">
 
-                    <label class="contact-form__label">Представьтесь пожалуйста</label>
-                    <input type="text" class="contact-form__input" placeholder="Представьтесь пожалуйста">
+                    <label class="contact-form__label">
+                        <span class="js-label invisible">Представьтесь пожалуйста</span>
+                        <input type="text" class="contact-form__input" placeholder="Представьтесь пожалуйста">
+                    </label>
 
-                    <label for="form-phone" class="contact-form__label">Номер телефона</label>
-                    <input type="tel" class="contact-form__input contact-form__input--phone" id="form-phone" placeholder="Номер телефона">
+                    <label for="form-phone" class="contact-form__label contact-form__label--phone">
+                        <span class="js-label invisible">Номер телефона</span>
+                        <input type="tel" class="contact-form__input" id="form-phone" placeholder="Номер телефона">
+                    </label>
 
-                    <label for="form-email" class="contact-form__label">E-mail</label>
-                    <input type="email" class="contact-form__input contact-form__input--email" id="form-email" placeholder="E-mail">
+                    <label for="form-email" class="contact-form__label contact-form__label--email">
+                        <span class="js-label invisible">E-mail</span>
+                        <input type="email" class="contact-form__input" id="form-email" placeholder="E-mail">
+                    </label>
 
-                    <label for="form-text" class="contact-form__label">Опишите задачу в свободной форме</label>
-                    <textarea type="text" class="contact-form__textarea" id="form-text" placeholder="Опишите задачу в свободной форме"></textarea>
+                    <label for="form-text" class="contact-form__label contact-form__label--textarea">
+                        <span  class="js-label invisible">Опишите задачу в свободной форме</span>
+                        <textarea type="text" class="contact-form__textarea" id="form-text" placeholder="Опишите задачу в свободной форме"></textarea>
+                    </label>
 
-
+                    <div class="text-right">
+                        <button class="contact-form__btn" type="submit">
+                            Отправить
+                            <i class="contact-form__arrow"></i>
+                        </button>
+                    </div>
                 </form>
             </div>
 

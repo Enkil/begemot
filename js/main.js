@@ -18988,15 +18988,15 @@ $(document).ready(function() {
 
     /* Custom */
 
-    if ($('#index-fullpage2').length){
+    if ($('#index-fullpage').length){
         $('#index-fullpage').fullpage({
-            anchors:['1', '2', '3', '4', '5', '6'],
+            anchors:['a', 'b', 'c', 'd', 'e', 'f'],
             //fitToSection: false,
             navigation: true,
             navigationPosition: 'left',
             navigationTooltips: ['1', '2', '3', '4', '5', '6'],
             showActiveTooltip: true,
-            scrollOverflow: true
+            scrollOverflow: true,
         });
     }
     
@@ -19166,5 +19166,20 @@ $(document).ready(function() {
     
     //sl_number = $('.radio-lbl').index($('.ui-state-active'));
     ////= pages--external/why-us.js
+    $(".contact-form__input").focus(function() {
+        $(this).parents(".contact-form__label").children('.js-label').removeClass('invisible');
+    });
+    
+    $(".contact-form__textarea").focus(function() {
+        $(this).parents(".contact-form__label").children('.js-label').removeClass('invisible');
+    });
+    
+    $(".contact-form__input").blur(function() {
+        $(this).parents(".contact-form__label").children('.js-label').addClass('invisible');
+    });
+    
+    $(".contact-form__textarea").blur(function() {
+        $(this).parents(".contact-form__label").children('.js-label').addClass('invisible');
+    });
 
 });
