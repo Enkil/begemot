@@ -56,7 +56,7 @@ if ($('#we-fullpage').length){
     });
 }
 
-if ($('#employee-fullpage').length){
+if ($('#employee-fullpage2').length){
     $('#employee-fullpage').fullpage({
         //Navigation
         menu: '#we-menu',
