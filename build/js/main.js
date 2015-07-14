@@ -19198,5 +19198,13 @@ $(document).ready(function() {
         $('.contact-form__btn').addClass('hidden');
         $('.contact-form__sented').removeClass('hidden');
     });
+    $('.we-slide').slick({
+        infinite: true,
+        slidesToShow: 1,
+        dots: true,
+        fade: true,
+    });
+    
+    $('#scrollspy').scrollspy({ target: '.js-scroll-nav' });
 
 });

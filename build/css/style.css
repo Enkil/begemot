@@ -314,6 +314,8 @@ h6
 }
 .bg-color-grey
 {
+    position: relative;
+
     background-color: #ebeef1;
 }
 .site-transition
@@ -347,86 +349,12 @@ h6
 {
     margin-top: 35px;
 }
-.half-bordered
-{
-    height: 100px;
-
-    border: 10px solid #f52d42;
-    border-bottom: none!important;
-}
-.half-bordered-container
-{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.arrow
-{
-    position: relative;
-    bottom: 51px;
-    left: calc(50% - 16px);
-
-    width: 32px;
-    height: 102px;
-
-    background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: 0 0;
-}
-.arrow:hover
-{
-    -webkit-animation-name: arrow-movement;
-            animation-name: arrow-movement;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-}
-.arrow > a
-{
-    display: inline-block;
-
-    width: 32px;
-    height: 102px;
-}
-@-webkit-keyframes arrow-movement
-{
-    from
-    {
-        bottom: 51px;
-    }
-    50%
-    {
-        bottom: 41px;
-    }
-    to
-    {
-        bottom: 61px;
-    }
-}
-@keyframes arrow-movement
-{
-    from
-    {
-        bottom: 51px;
-    }
-    50%
-    {
-        bottom: 41px;
-    }
-    to
-    {
-        bottom: 61px;
-    }
-}
 .team
 {
     position: relative;
 
-    height: 70%;
-    margin-top: 50px;
+    height: 605px;
+    margin-top: 250px;
 
     cursor: pointer;
 
@@ -448,7 +376,7 @@ h6
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 14px;
 
-    margin-top: 1%;
+    margin-top: 80px;
     margin-bottom: 0;
 
     letter-spacing: 2px;
@@ -468,6 +396,8 @@ h6
     margin-top: 10px;
     margin-bottom: 0;
 
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
     text-transform: uppercase;
 }
 .team__slogan
@@ -477,7 +407,7 @@ h6
     position: relative;
     z-index: 10;
 
-    margin-top: 2%;
+    margin-top: 50px;
     margin-bottom: 2%;
 }
 .team__photo
@@ -938,6 +868,113 @@ h6
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -32px 0;
+}
+.we-slide .slick-next,
+.we-slide .slick-prev
+{
+    position: absolute;
+
+    display: block;
+
+    width: 72px;
+    height: 72px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    background-color: #fff;
+}
+.we-slide .slick-next:hover,
+.we-slide .slick-prev:hover
+{
+    background-color: #f52d42;
+}
+.we-slide .slick-next:before,
+.we-slide .slick-prev:before
+{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    border: none;
+    background-image: url(../img/images/team-slider-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.we-slide .slick-next:hover:before,
+.we-slide .slick-prev:hover:before
+{
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+
+    background-image: url(../img/images/team-slider-arrow--hover.png);
+    background-position: 50% 50%;
+}
+.we-slide .slick-next
+{
+    right: 0;
+
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.we-slide .slick-prev
+{
+    left: 0;
+}
+.we-slide .slick-dots li
+{
+    display: inline-block;
+
+    width: 50px;
+    height: 2px;
+    margin-right: 5px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+
+    background-color: #fff;
+}
+.we-slide .slick-dots li.slick-active
+{
+    height: 8px;
+
+    border-radius: 0;
+    background-color: #f52d42;
+}
+.we-slide .slick-dots li:hover
+{
+    height: 8px;
+
+    border-radius: 0;
+    background-color: #f52d42;
+}
+.we-slide .slick-dots button
+{
+    width: 50px;
+    height: 2px;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+
+    border-radius: 0;
+    background-color: transparent;
+}
+.we-slide .slick-dots button:before
+{
+    font-size: 0;
+    line-height: 0;
+
+    content: '';
+
+    color: transparent;
 }
 .header
 {
