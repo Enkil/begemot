@@ -2609,29 +2609,45 @@ h6
     outline: none;
     background-color: transparent;
 }
-.contact-form__input ::-webkit-input-placeholder
+.contact-form__input::-webkit-input-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
 }
-.contact-form__input ::-moz-placeholder
+.contact-form__input::-moz-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
 }
-.contact-form__input :-moz-placeholder
+.contact-form__input:-moz-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
 }
-.contact-form__input :-ms-input-placeholder
+.contact-form__input:-ms-input-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+}
+.contact-form__input:focus::-webkit-input-placeholder
+{
+    color: transparent;
+}
+.contact-form__input:focus::-moz-placeholder
+{
+    color: transparent;
+}
+.contact-form__input:focus:-moz-placeholder
+{
+    color: transparent;
+}
+.contact-form__input:focus:-ms-input-placeholder
+{
+    color: transparent;
 }
 .contact-form__textarea
 {
@@ -2648,6 +2664,46 @@ h6
     border: none;
     outline: none;
     background-color: transparent;
+}
+.contact-form__textarea::-webkit-input-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__textarea::-moz-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__textarea:-moz-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__textarea:-ms-input-placeholder
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.contact-form__textarea:focus::-webkit-input-placeholder
+{
+    color: transparent;
+}
+.contact-form__textarea:focus::-moz-placeholder
+{
+    color: transparent;
+}
+.contact-form__textarea:focus:-moz-placeholder
+{
+    color: transparent;
+}
+.contact-form__textarea:focus:-ms-input-placeholder
+{
+    color: transparent;
 }
 .contact-form__btn
 {

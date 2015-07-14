@@ -474,26 +474,31 @@
     font-size: 18px;
     line-height: 30px;
 
-    ::-webkit-input-placeholder {
+    &::-webkit-input-placeholder {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
     }
-    ::-moz-placeholder          {
+    &::-moz-placeholder          {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
     }
-    :-moz-placeholder           {
+    &:-moz-placeholder           {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
     }
-    :-ms-input-placeholder      {
+    &:-ms-input-placeholder      {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
     }
+
+    &:focus::-webkit-input-placeholder {color: transparent}
+    &:focus::-moz-placeholder {color: transparent}
+    &:focus:-moz-placeholder {color: transparent}
+    &:focus:-ms-input-placeholder {color: transparent}
   }
   &__textarea{
     display: block;
@@ -506,6 +511,32 @@
     margin-top: 15px;
     margin-bottom: 5px;
     resize: none;
+
+    &::-webkit-input-placeholder {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &::-moz-placeholder          {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &:-moz-placeholder           {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &:-ms-input-placeholder      {
+      .ProximaNova-Bold;
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    &:focus::-webkit-input-placeholder {color: transparent}
+    &:focus::-moz-placeholder {color: transparent}
+    &:focus:-moz-placeholder {color: transparent}
+    &:focus:-ms-input-placeholder {color: transparent}
   }
   &__btn{
     .ProximaNova-Bold;
