@@ -1031,7 +1031,7 @@ h6
 
     list-style-type: none;
 }
-@media (max-width: 1600px)
+@media (max-width: 1650px)
 {
     .header__menu
     {
@@ -1046,7 +1046,7 @@ h6
 {
     display: none;
 }
-@media (max-width: 1600px)
+@media (max-width: 1650px)
 {
     .header__menu-cross
     {
@@ -1079,7 +1079,7 @@ h6
 {
     margin-right: 0;
 }
-@media (max-width: 1600px)
+@media (max-width: 1650px)
 {
     .header__menu-item
     {
