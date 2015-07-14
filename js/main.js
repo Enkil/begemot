@@ -19442,5 +19442,14 @@ $(document).ready(function() {
         console.log('exit:', $(this).attr('id'));
     });
     $('.tile').scrollSpy();
+    $('.header__gamburger').click(function() {
+        event.preventDefault();
+       $('.header__menu').toggleClass('header__menu--active');
+    });
+    
+    $('.header__menu-cross').click(function(event) {
+        event.preventDefault();
+        $('.header__menu').removeClass('header__menu--active');
+    });
 
 });
