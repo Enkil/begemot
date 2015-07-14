@@ -1297,10 +1297,15 @@ h6
 }
 .employee-toggle
 {
+    display: none;
     float: right;
 
     width: 500px;
     margin-top: 10px;
+}
+.employee-toggle--active
+{
+    display: block;
 }
 .employee-toggle__arrow
 {
