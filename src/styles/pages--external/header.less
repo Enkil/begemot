@@ -17,6 +17,10 @@
     @media (max-width: 1150px) {
       margin-left: 40px;
     }
+    @media (max-width: 1600px) {
+      position: relative;
+      top: -20px;
+    }
   }
   &__menu{
     display: inline-block;
@@ -25,18 +29,22 @@
   &__menu-item{
     display: inline-block;
     margin-right: 80px;
+    line-height: 75px;
     @media (max-width: 1150px) {
       margin-right: 40px;
     }
     &:last-child{
       margin-right: 0;
     }
+    @media (max-width: 1600px) {
+      display: list-item;
+      line-height: normal;
+    }
   }
   &__menu-link{
     .ProximaNova-Bold;
     color: @grey;
     font-size: 14px;
-    line-height: 75px;
     text-decoration: underline;
     text-transform: uppercase;
     //letter-spacing: 2px;
@@ -152,3 +160,38 @@
   }
 }
 
+.employee-toggle{
+  width: 500px;
+  float: right;
+  margin-top: 10px;
+
+  &__arrow{
+    .sprite(@sprite-employee-arrow);
+    display: inline-block;
+    margin-right: 25px;
+    &--next{
+      transform: rotate(180deg);
+      margin-right: 0;
+      margin-left: 25px;
+    }
+  }
+  &__person{
+    display: inline-block;
+    width: 150px;
+  }
+  &__role{
+    display: inline-block;
+    .ProximaNova-Light;
+    font-size: 12px;
+    line-height: 24px;
+    color: @dark;
+  }
+  &__name{
+    display: inline-block;
+    .ProximaNova-Bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @black;
+  }
+}
