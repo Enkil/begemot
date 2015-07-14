@@ -3,9 +3,9 @@ if ($('#index-fullpage').length){
         anchors:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
         //fitToSection: false,
         navigation: true,
-        navigationPosition: 'left',
-        navigationTooltips:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
-        showActiveTooltip: true,
+        navigationPosition: 'right',
+        //navigationTooltips:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
+        //showActiveTooltip: true,
         scrollOverflow: true,
         fitToSection: false,
     });

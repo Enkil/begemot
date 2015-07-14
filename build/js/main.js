@@ -18993,9 +18993,9 @@ $(document).ready(function() {
             anchors:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
             //fitToSection: false,
             navigation: true,
-            navigationPosition: 'left',
-            navigationTooltips:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
-            showActiveTooltip: true,
+            navigationPosition: 'right',
+            //navigationTooltips:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
+            //showActiveTooltip: true,
             scrollOverflow: true,
             fitToSection: false,
         });
@@ -19149,12 +19149,21 @@ $(document).ready(function() {
         //adaptiveHeight: true,
         dots:true,
         prevArrow: $('.who-we-are-nav__prev'),
-        nextArrow: $('.who-we-are-nav__next')
+        nextArrow: $('.who-we-are-nav__next'),
+    
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
     });
     $('.apps__slider').slick({
         dots:true,
         prevArrow: $('.apps-nav__prev'),
-        nextArrow: $('.apps-nav__next')
+        nextArrow: $('.apps-nav__next'),
+        infinite: true,
+        speed: 200,
+        fade: true,
+        cssEase: 'linear'
     });
     
     
@@ -19181,6 +19190,13 @@ $(document).ready(function() {
     
     $(".contact-form__textarea").blur(function() {
         $(this).parents(".contact-form__label").children('.js-label').addClass('invisible');
+    });
+    
+    $('.contact-form__btn').click(function(event){
+        event.preventDefault();
+        $('.contact-form__label').addClass('hidden');
+        $('.contact-form__btn').addClass('hidden');
+        $('.contact-form__sented').removeClass('hidden');
     });
 
 });

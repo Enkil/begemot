@@ -1,7 +1,11 @@
 $('.apps__slider').slick({
     dots:true,
     prevArrow: $('.apps-nav__prev'),
-    nextArrow: $('.apps-nav__next')
+    nextArrow: $('.apps-nav__next'),
+    infinite: true,
+    speed: 200,
+    fade: true,
+    cssEase: 'linear'
 });
 
 

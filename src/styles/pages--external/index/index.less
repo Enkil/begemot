@@ -437,6 +437,7 @@
   display: block;
   border: 10px solid @white;
   padding: 20px;
+  height: 500px;
 
   &__label{
     .ProximaNova-Regular;
@@ -534,9 +535,26 @@
     display: inline-block;
     .site-transition;
   }
+  &__sented{
+    .ProximaNova-Bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .section-6{
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+  height: 6px;
+  width: 6px;
+}
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border: 2px solid @red;
 }

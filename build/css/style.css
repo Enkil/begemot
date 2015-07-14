@@ -2235,6 +2235,7 @@ h6
 {
     display: block;
 
+    height: 500px;
     padding: 20px;
 
     border: 10px solid #fff;
@@ -2376,8 +2377,31 @@ h6
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -107px -27px;
 }
+.contact-form__sented
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
 .section-6
 {
     margin-top: 100px;
     margin-bottom: 100px;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span
+{
+    width: 6px;
+    height: 6px;
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span
+{
+    width: 10px;
+    height: 10px;
+
+    border: 2px solid #f52d42;
+    background-color: transparent;
 }
