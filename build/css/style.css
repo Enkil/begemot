@@ -432,6 +432,10 @@ h6
 
     border: 10px solid #f52d42;
 }
+.team:hover .team__name
+{
+    color: #f52d42;
+}
 .team__member
 {
     width: 760px;
@@ -1380,10 +1384,6 @@ h6
             transition: all .5s ease;
     letter-spacing: 3px;
     text-transform: uppercase;
-}
-.graduate-text--employee
-{
-    margin-top: 50px;
 }
 .graduate-text__title
 {
