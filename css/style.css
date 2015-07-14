@@ -690,7 +690,7 @@ h6
             transition: all .5s ease;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -47px;
+    background-position: -125px -47px;
 }
 .vacancy-wrapper
 {
@@ -725,7 +725,7 @@ h6
     height: 9px;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -74px;
+    background-position: -107px -64px;
 }
 .vacancy__name
 {
@@ -755,7 +755,7 @@ h6
             transition: all .5s ease;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -56px;
+    background-position: -107px -73px;
 }
 .vacancy-modal
 {
@@ -834,7 +834,7 @@ h6
     height: 9px;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -74px;
+    background-position: -107px -64px;
 }
 .vacancy-modal__arrow
 {
@@ -851,7 +851,7 @@ h6
             transition: all .5s ease;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -65px;
+    background-position: -107px -82px;
 }
 .vacancy-modal__cross
 {
@@ -999,34 +999,66 @@ h6
         width: 1024px;
     }
 }
+.header__logo-link
+{
+    display: block;
+    float: left;
+
+    width: 245px;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 60px;
+}
+@media (max-width: 1150px)
+{
+    .header__logo-link
+    {
+        margin-left: 40px;
+    }
+}
 .header__logo
 {
     display: inline-block;
 
     width: 243px;
     height: 37px;
-    margin-left: 60px;
-}
-@media (max-width: 1150px)
-{
-    .header__logo
-    {
-        margin-left: 40px;
-    }
-}
-@media (max-width: 1600px)
-{
-    .header__logo
-    {
-        position: relative;
-        top: -20px;
-    }
 }
 .header__menu
 {
     display: inline-block;
 
+    padding: 0;
+
     list-style-type: none;
+}
+@media (max-width: 1600px)
+{
+    .header__menu
+    {
+        width: 200px;
+        padding-bottom: 45px;
+        padding-left: 35px;
+
+        background-color: #fff;
+    }
+}
+.header__menu-cross
+{
+    display: none;
+}
+@media (max-width: 1600px)
+{
+    .header__menu-cross
+    {
+        display: inline-block;
+
+        width: 18px;
+        height: 17px;
+        margin-bottom: 55px;
+
+        background-image: url(../img/sprites/png/png-sprite.png);
+        background-position: -107px -47px;
+    }
 }
 .header__menu-item
 {
@@ -1054,6 +1086,8 @@ h6
         line-height: normal;
 
         display: list-item;
+
+        margin-top: 25px;
     }
 }
 .header__menu-link
@@ -1262,6 +1296,14 @@ h6
 
     width: 150px;
 }
+.employee-toggle__person:hover .employee-toggle__role
+{
+    color: #f52d42;
+}
+.employee-toggle__person:hover .employee-toggle__name
+{
+    color: #f52d42;
+}
 .employee-toggle__role
 {
     font-family: 'ProximaNova-Light', sans-serif;
@@ -1269,6 +1311,9 @@ h6
     line-height: 24px;
 
     display: inline-block;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
 
     color: #666;
 }
@@ -1280,6 +1325,8 @@ h6
 
     display: inline-block;
 
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
     text-transform: uppercase;
 
     color: #000;
@@ -1877,7 +1924,7 @@ h6
     outline: none;
     background-color: transparent;
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -83px;
+    background-position: -69px -30px;
 }
 .who-we-are-nav__next
 {
@@ -2051,7 +2098,7 @@ h6
             transition: all .5s ease;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -65px;
+    background-position: -107px -82px;
 }
 .apps__case-view
 {
@@ -2088,7 +2135,7 @@ h6
     outline: none;
     background-color: transparent;
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -83px;
+    background-position: -69px -30px;
 }
 .apps-nav__next
 {
@@ -2335,7 +2382,7 @@ h6
             transition: all .5s ease;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -65px;
+    background-position: -107px -82px;
 }
 .trick-quote__link
 {
@@ -2473,7 +2520,7 @@ h6
     height: 9px;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -74px;
+    background-position: -107px -64px;
 }
 .contact-form__arrow
 {
@@ -2490,7 +2537,7 @@ h6
             transition: all .5s ease;
 
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -107px -65px;
+    background-position: -107px -82px;
 }
 .contact-form__sented
 {
