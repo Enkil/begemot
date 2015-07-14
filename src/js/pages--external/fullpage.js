@@ -7,11 +7,12 @@ if ($('#index-fullpage').length){
         navigationTooltips:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
         showActiveTooltip: true,
         scrollOverflow: true,
+        fitToSection: false,
     });
 }
 
 
-if ($('#we-fullpage').length){
+if ($('#we-fullpage2').length){
     $('#we-fullpage').fullpage({
         //Navigation
         menu: '#we-menu',

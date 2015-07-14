@@ -13,11 +13,11 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/icon-fonts/begemot-icon-font.eot?9816061');
-    src: url('fonts/icon-fonts/begemot-icon-font.eot?9816061#iefix') format('embedded-opentype'),
-    url('fonts/icon-fonts/begemot-icon-font.woff?9816061') format('woff'),
-    url('fonts/icon-fonts/begemot-icon-font.ttf?9816061') format('truetype'),
-    url('fonts/icon-fonts/begemot-icon-font.svg?9816061#begemot-icon-font') format('svg');
+    src: url('fonts/icon-fonts/begemot-icon-font.eot?61022891');
+    src: url('fonts/icon-fonts/begemot-icon-font.eot?61022891#iefix') format('embedded-opentype'),
+    url('fonts/icon-fonts/begemot-icon-font.woff?61022891') format('woff'),
+    url('fonts/icon-fonts/begemot-icon-font.ttf?61022891') format('truetype'),
+    url('fonts/icon-fonts/begemot-icon-font.svg?61022891#begemot-icon-font') format('svg');
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -25,7 +25,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'begemot-icon-font';
-    src: url('../font/begemot-icon-font.svg?9816061#begemot-icon-font') format('svg');
+    src: url('../font/begemot-icon-font.svg?61022891#begemot-icon-font') format('svg');
   }
 }
 */
@@ -69,6 +69,18 @@
 {
     content: '\e800';
 } /* '' */
+.icon-skype-circled:before
+{
+    content: '\e801';
+} /* '' */
+.icon-mail-circled:before
+{
+    content: '\e802';
+} /* '' */
+.icon-phone-circled:before
+{
+    content: '\e803';
+} /* '' */
 /* Custom */
 /***************************************************/
 /* Set custom or change third-party Less variables */
@@ -1239,6 +1251,27 @@ h6
     color: #666;
     outline: none;
 }
+.footer__hr
+{
+    height: 3px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    background-color: #000;
+}
+.footer__title
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.footer__text
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
 .graduate-section
 {
     position: relative;
@@ -2342,4 +2375,9 @@ h6
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -107px -27px;
+}
+.section-6
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }

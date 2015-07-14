@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'begemot-icon-font';
-  src: url('fonts/icon-fonts/begemot-icon-font.eot?9816061');
-  src: url('fonts/icon-fonts/begemot-icon-font.eot?9816061#iefix') format('embedded-opentype'),
-       url('fonts/icon-fonts/begemot-icon-font.woff?9816061') format('woff'),
-       url('fonts/icon-fonts/begemot-icon-font.ttf?9816061') format('truetype'),
-       url('fonts/icon-fonts/begemot-icon-font.svg?9816061#begemot-icon-font') format('svg');
+  src: url('fonts/icon-fonts/begemot-icon-font.eot?61022891');
+  src: url('fonts/icon-fonts/begemot-icon-font.eot?61022891#iefix') format('embedded-opentype'),
+       url('fonts/icon-fonts/begemot-icon-font.woff?61022891') format('woff'),
+       url('fonts/icon-fonts/begemot-icon-font.ttf?61022891') format('truetype'),
+       url('fonts/icon-fonts/begemot-icon-font.svg?61022891#begemot-icon-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'begemot-icon-font';
-    src: url('../font/begemot-icon-font.svg?9816061#begemot-icon-font') format('svg');
+    src: url('../font/begemot-icon-font.svg?61022891#begemot-icon-font') format('svg');
   }
 }
 */
@@ -55,3 +55,6 @@
 }
  
 .icon-rouble:before { content: '\e800'; } /* '' */
+.icon-skype-circled:before { content: '\e801'; } /* '' */
+.icon-mail-circled:before { content: '\e802'; } /* '' */
+.icon-phone-circled:before { content: '\e803'; } /* '' */

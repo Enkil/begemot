@@ -1,2 +1,5 @@
 
 .icon-rouble:before { content: '\e800'; } /* '' */
+.icon-skype-circled:before { content: '\e801'; } /* '' */
+.icon-mail-circled:before { content: '\e802'; } /* '' */
+.icon-phone-circled:before { content: '\e803'; } /* '' */
