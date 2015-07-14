@@ -118,6 +118,90 @@
   }
 }
 
+.header-main{
+  background-color: @white;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  min-width: 1024px;
+  @media (max-width: 1024px) {
+    width: 1024px;
+  }
+
+  &__logo-link{
+    display: block;
+    width: 245px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 60px;
+    @media (max-width: 1150px) {
+      margin-left: 40px;
+    }
+  }
+  &__logo{
+    display: inline-block;
+    width: 243px;
+    height: 37px;
+  }
+  &__menu{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+  }
+  &__menu-cross{
+    display: none;
+  }
+  &__menu-item{
+    display: inline-block;
+    margin-right: 80px;
+    line-height: 75px;
+    @media (max-width: 1150px) {
+      margin-right: 40px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__menu-link{
+    .ProximaNova-Bold;
+    color: @grey;
+    font-size: 14px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    .site-transition;
+    &:hover{
+      color: @red;
+    }
+  }
+  &__btn{
+    .ProximaNova-Bold;
+    font-size: 14px;
+    color: @black;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: 2px solid @black;
+    background-color: @white;
+    outline: none;
+    margin-right: 60px;
+    margin-top: 20px;
+    @media (max-width: 1150px) {
+      margin-right: 40px;
+    }
+    .site-transition;
+    &:hover{
+      color: @red;
+      border: 2px solid @red;
+    }
+  }
+}
+
 .header-index{
   height: 75px;
   text-align: center;
