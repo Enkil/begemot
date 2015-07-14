@@ -3,6 +3,7 @@ $('.we-slide').slick({
     slidesToShow: 1,
     dots: true,
     fade: true,
+    cssEase: 'linear'
 });
 
 //$('#scrollspy').scrollspy({ target: '.js-scroll-nav' });

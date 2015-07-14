@@ -5,26 +5,65 @@
   top: 0;
   z-index: 50;
   width: 100%;
+  min-width: 1024px;
   @media (max-width: 1024px) {
     width: 1024px;
   }
 
-  &__logo{
-    display: inline-block;
+  &__gamburger{
+    display: none;
+    @media (max-width: 1650px) {
+      .sprite(@sprite-gamburger);
+      display: block;
+      width: 28px;
+      height: 21px;
+      float: left;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 30px;
+    }
+  }
+  &__logo-link{
+    display: block;
+    width: 245px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
     margin-left: 60px;
-    width: 243px;
-    height: 37px;
     @media (max-width: 1150px) {
       margin-left: 40px;
     }
-    @media (max-width: 1600px) {
-      position: relative;
-      top: -20px;
-    }
+  }
+  &__logo{
+    display: inline-block;
+    width: 243px;
+    height: 37px;
   }
   &__menu{
     display: inline-block;
     list-style-type: none;
+    padding: 0;
+    @media (max-width: 1650px) {
+      display: none;
+      background-color: @white;
+      width: 200px;
+      padding-left: 35px;
+      padding-bottom: 45px;
+    }
+    &--active{
+      @media (max-width: 1650px) {
+        display: inline-block;
+      }
+    }
+  }
+  &__menu-cross{
+    display: none;
+    @media (max-width: 1650px) {
+      .sprite(@sprite-header-menu-cross);
+      display: inline-block;
+      margin-bottom: 55px;
+      margin-top: 5px;
+    }
   }
   &__menu-item{
     display: inline-block;
@@ -36,9 +75,10 @@
     &:last-child{
       margin-right: 0;
     }
-    @media (max-width: 1600px) {
+    @media (max-width: 1650px) {
       display: list-item;
       line-height: normal;
+      margin-top: 25px;
     }
   }
   &__menu-link{
@@ -47,7 +87,6 @@
     font-size: 14px;
     text-decoration: underline;
     text-transform: uppercase;
-    //letter-spacing: 2px;
     .site-transition;
     &:hover{
       color: @red;
@@ -164,6 +203,10 @@
   width: 500px;
   float: right;
   margin-top: 10px;
+  display: none;
+  &--active{
+    display: block;
+  }
 
   &__arrow{
     .sprite(@sprite-employee-arrow);
@@ -178,6 +221,10 @@
   &__person{
     display: inline-block;
     width: 150px;
+    &:hover{
+      .employee-toggle__role{ color: @red;  }
+      .employee-toggle__name{ color: @red;  }
+    }
   }
   &__role{
     display: inline-block;
@@ -185,6 +232,7 @@
     font-size: 12px;
     line-height: 24px;
     color: @dark;
+    .site-transition;
   }
   &__name{
     display: inline-block;
@@ -193,5 +241,6 @@
     line-height: 24px;
     text-transform: uppercase;
     color: @black;
+    .site-transition
   }
 }

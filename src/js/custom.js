@@ -16,5 +16,6 @@ $(document).ready(function() {
     ////= pages--external/why-us.js
     //= pages--external/contact-form.js
     //= pages--external/we-slider.js
+    //= pages--external/header.js
 
 });

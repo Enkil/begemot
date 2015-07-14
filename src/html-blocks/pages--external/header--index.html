@@ -17,15 +17,31 @@
 
 <header class="header">
 
-    <a href="index.html"><img class="header__logo" src="img/images/logo.png" alt="Бегемот. Разработка мобильных приложений"/></a>
+    <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/images/logo.png" alt="Бегемот. Разработка мобильных приложений"/></a>
+
+    <a href="#"><i class="header__gamburger"></i></a>
 
     <ul class="header__menu">
-        <li class="header__menu-item"><a class="header__menu-link" href="we.html">We</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="portfolio.html">Work</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Blog</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Contacts</a></li>
+        <li class="header__menu-item"><a class="header__menu-cross" href="we.html">&nbsp;</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="we.html">Мы</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="portfolio.html">Работы</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Копилка</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
     </ul>
 
-    <button class="header__btn pull-right">Drop us a line</button>
+    <div class="employee-toggle">
+        <a href="employee.html"><i class="employee-toggle__arrow"></i></a>
+        <a class="employee-toggle__person" href="employee.html">
+            <span class="employee-toggle__role">Руководитель студии</span>
+            <span class="employee-toggle__name">Андраш Густи</span>
+        </a>
+        <a class="employee-toggle__person" href="employee.html">
+            <span class="employee-toggle__role">Руководитель проектов</span>
+            <span class="employee-toggle__name">Антон Речкалов</span>
+        </a>
+        <a href="employee.html"><i class="employee-toggle__arrow employee-toggle__arrow--next"></i></a>
+    </div>
+
+    <button class="header__btn pull-right">напишите нам</button>
 
 </header>
