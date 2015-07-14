@@ -328,6 +328,7 @@ h6
     width: 45px;
     height: 2px;
     margin-top: 15px;
+    margin-left: 4px;
 
     border-bottom: 2px solid #f52d42;
 }
@@ -2151,8 +2152,8 @@ h6
 }
 .apps__slider .slick-dots
 {
-    bottom: 60px;
-    left: 150px;
+    bottom: 42px;
+    left: 100px;
 
     text-align: left;
 }
@@ -2183,9 +2184,9 @@ h6
 .apps__slide-wrapper
 {
     margin-top: 75px;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-right: 45px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     padding-left: 60px;
 
     border: 10px solid #f52d42;
@@ -2205,6 +2206,9 @@ h6
     font-family: 'ProximaNova-Light', sans-serif;
     font-size: 56px;
     line-height: 25px;
+
+    position: relative;
+    left: -4px;
 
     margin-bottom: 35px;
 }
@@ -2281,13 +2285,15 @@ h6
 .apps-nav
 {
     position: relative;
-    bottom: 300px;
+    bottom: 280px;
     left: 70px;
 
     width: 20%;
 }
 .apps-nav__prev
 {
+    position: relative;
+
     width: 10px;
     height: 16px;
 
@@ -2300,6 +2306,9 @@ h6
 }
 .apps-nav__next
 {
+    position: relative;
+    left: -65px;
+
     float: right;
 
     width: 10px;
