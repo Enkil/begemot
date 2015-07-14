@@ -70,7 +70,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
-    <body class="bg-color-grey">
+    <body class="bg-color-grey" id="scrollspy">
 
     <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -86,6 +86,19 @@
         <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Копилка</a></li>
         <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
     </ul>
+
+    <div class="employee-toggle">
+        <a href="employee.html"><i class="employee-toggle__arrow"></i></a>
+        <a class="employee-toggle__person" href="employee.html">
+            <span class="employee-toggle__role">Руководитель студии</span>
+            <span class="employee-toggle__name">Андраш Густи</span>
+        </a>
+        <a class="employee-toggle__person" href="employee.html">
+            <span class="employee-toggle__role">Руководитель проектов</span>
+            <span class="employee-toggle__name">Антон Речкалов</span>
+        </a>
+        <a href="employee.html"><i class="employee-toggle__arrow employee-toggle__arrow--next"></i></a>
+    </div>
 
     <button class="header__btn pull-right">напишите нам</button>
 
@@ -118,137 +131,138 @@
          </div>
      </div>
 
-     <div class="container half-bordered-container">
-         <div class="row">
-             <div class="col-xs-12">
-                 <div class="half-bordered"><div class="arrow"><a href="#team"></a></div></div>
-             </div>
-         </div>
-     </div>
+     <!--<div class="container half-bordered-container">-->
+         <!--<div class="row">-->
+             <!--<div class="col-xs-12">-->
+                 <!--<div class="half-bordered"><div class="arrow"><a href="#team"></a></div></div>-->
+             <!--</div>-->
+         <!--</div>-->
+     <!--</div>-->
 
  </section>
 
 
                 <!-- Second view -->
-<section class="section">
-    <!-- 1 slide -->
-    <div class="slide">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+<section class="section js-scrollspy" id="team">
+   <div class="we-slide">
+       <!-- 1 slide -->
+       <div class="slide">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xs-12">
 
-                    <div class="team" onclick="location.href='employee.html'">
-                        <div class="team__member">
-                            <h3 class="team__position">Руководитель студии</h3>
-                            <h2 class="team__name">Андраш Густи</h2>
-                            <p class="team__slogan text">
-                                «Мы знаем, что нашим клиентам важно понимать,<br/>
-                                что их продукт находится в надежных, опытных руках.»
-                            </p>
-                            <i></i>
-                        </div>
-                        <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
-                    </div>
+                       <div class="team" onclick="location.href='employee.html'">
+                           <div class="team__member">
+                               <h3 class="team__position">Руководитель студии</h3>
+                               <h2 class="team__name">Андраш Густи</h2>
+                               <p class="team__slogan text">
+                                   «Мы знаем, что нашим клиентам важно понимать,<br/>
+                                   что их продукт находится в надежных, опытных руках.»
+                               </p>
+                               <i></i>
+                           </div>
+                           <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
+                       </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 2 slide -->
-    <div class="slide">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- 2 slide -->
+       <div class="slide">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xs-12">
 
-                    <div class="team" onclick="location.href='employee.html'">
-                        <div class="team__member">
-                            <h3 class="team__position">Руководитель студии</h3>
-                            <h2 class="team__name">Андраш Густи</h2>
-                            <p class="team__slogan text">
-                                «Мы знаем, что нашим клиентам важно понимать,<br/>
-                                что их продукт находится в надежных, опытных руках.»
-                            </p>
-                            <i></i>
-                        </div>
-                        <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
-                    </div>
+                       <div class="team" onclick="location.href='employee.html'">
+                           <div class="team__member">
+                               <h3 class="team__position">TextText</h3>
+                               <h2 class="team__name">TextText</h2>
+                               <p class="team__slogan text">
+                                   TextTextTextTextTextTextTextTextTextText TextTextTextTextTextText TextTextTextText
+                               </p>
+                               <i></i>
+                           </div>
+                           <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
+                       </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 3 slide -->
-    <div class="slide">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- 3 slide -->
+       <div class="slide">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xs-12">
 
-                    <div class="team" onclick="location.href='employee.html'">
-                        <div class="team__member">
-                            <h3 class="team__position">Руководитель студии</h3>
-                            <h2 class="team__name">Андраш Густи</h2>
-                            <p class="team__slogan text">
-                                «Мы знаем, что нашим клиентам важно понимать,<br/>
-                                что их продукт находится в надежных, опытных руках.»
-                            </p>
-                            <i></i>
-                        </div>
-                        <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
-                    </div>
+                       <div class="team" onclick="location.href='employee.html'">
+                           <div class="team__member">
+                               <h3 class="team__position">Руководитель студии</h3>
+                               <h2 class="team__name">Андраш Густи</h2>
+                               <p class="team__slogan text">
+                                   «Мы знаем, что нашим клиентам важно понимать,<br/>
+                                   что их продукт находится в надежных, опытных руках.»
+                               </p>
+                               <i></i>
+                           </div>
+                           <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
+                       </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 4 slide -->
-    <div class="slide">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- 4 slide -->
+       <div class="slide">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xs-12">
 
-                    <div class="team" onclick="location.href='employee.html'">
-                        <div class="team__member">
-                            <h3 class="team__position">Руководитель студии</h3>
-                            <h2 class="team__name">Андраш Густи</h2>
-                            <p class="team__slogan text">
-                                «Мы знаем, что нашим клиентам важно понимать,<br/>
-                                что их продукт находится в надежных, опытных руках.»
-                            </p>
-                            <i></i>
-                        </div>
-                        <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
-                    </div>
+                       <div class="team" onclick="location.href='employee.html'">
+                           <div class="team__member">
+                               <h3 class="team__position">Руководитель студии</h3>
+                               <h2 class="team__name">Андраш Густи</h2>
+                               <p class="team__slogan text">
+                                   «Мы знаем, что нашим клиентам важно понимать,<br/>
+                                   что их продукт находится в надежных, опытных руках.»
+                               </p>
+                               <i></i>
+                           </div>
+                           <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
+                       </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 5 slide -->
-    <div class="slide">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- 5 slide -->
+       <div class="slide">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xs-12">
 
-                    <div class="team" onclick="location.href='employee.html'">
-                        <div class="team__member">
-                            <h3 class="team__position">Руководитель студии</h3>
-                            <h2 class="team__name">Андраш Густи</h2>
-                            <p class="team__slogan text">
-                                «Мы знаем, что нашим клиентам важно понимать,<br/>
-                                что их продукт находится в надежных, опытных руках.»
-                            </p>
-                            <i></i>
-                        </div>
-                        <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
-                    </div>
+                       <div class="team" onclick="location.href='employee.html'">
+                           <div class="team__member">
+                               <h3 class="team__position">Руководитель студии</h3>
+                               <h2 class="team__name">Андраш Густи</h2>
+                               <p class="team__slogan text">
+                                   «Мы знаем, что нашим клиентам важно понимать,<br/>
+                                   что их продукт находится в надежных, опытных руках.»
+                               </p>
+                               <i></i>
+                           </div>
+                           <img class="team__photo" src="img/images/andrash.png" alt="Андраш Густи"/>
+                       </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 </section>
 
-                <section class="section">
+                <section class="section js-scrollspy" id="graduates">
     <div class="container">
 
         <div class="row">
@@ -350,19 +364,6 @@
                         </div>
                     </div>
 
-                    <!-- 7 member -->
-                    <div class="col-xs-4">
-                        <div class="member" onclick="location.href='graduate.html'">
-                            <div class="member__wrapper">
-                                <img class="member__photo" src="img/images/member-photo.png" alt="Павел Александров"/>
-                                <span class="member__photo-bg"></span>
-                            </div>
-                            <h2 class="member__name">ДлинноеИмя ДлиннаяФамилия</h2>
-                            <p class="member__role text">Менеджер по работе с клиентами и партнерами</p>
-                            <i class="member__arrow"></i>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -370,7 +371,7 @@
     </div>
 </section>
 
-                <section class="section">
+                <section class="section js-scrollspy" id="vacancies">
     <div class="container">
 
         <div class="row">
@@ -406,6 +407,25 @@
                     <i class="vacancy__arrow"></i>
                 </div>
             </div>
+
+
+            <footer class="col-xs-12">
+
+                <div class="footer__hr"></div>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <p class="footer__text">&copy; <span class="footer__title">Begemot-Begemot, 2015</span></p>
+                        <p class="footer__text">Санкт-Петербург, Кронверкский проспект, 23</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="footer__text"><span class="footer-title">+7 (812) 389-39-32</span> <i class="icon-phone-circled"></i></p>
+                        <p class="footer__text">hello@begemot-begemot.ru <i class="icon-mail-circled"></i></p>
+                        <p class="footer__text">andrasz.huszti <i class="icon-skype-circled"></i></p>
+                    </div>
+                </div>
+
+            </footer>
 
         </div>
 
@@ -471,13 +491,13 @@
 
 </div>
 
-    <footer class="footer">
-    <ul class="footer__menu" id="we-menu">
-        <li data-menuanchor="team" class="footer__menu-item"><a class="footer__menu-link" href="#team">Команда</a></li>
-        <li data-menuanchor="graduates" class="footer__menu-item"><a class="footer__menu-link" href="#graduates">Наши выпускники</a></li>
-        <li data-menuanchor="vacancies" class="footer__menu-item"><a class="footer__menu-link" href="#vacancies">Вакансии</a></li>
+    <nav class="footer js-scroll-nav" id="scroll-nav">
+    <ul class="footer__menu">
+        <li class="footer__menu-item"><a class="footer__menu-link" href="#team">Команда</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link" href="#graduates">Наши выпускники</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link" href="#vacancies">Вакансии</a></li>
     </ul>
-</footer>
+</nav>
 
 <!-- JavaScript-->
 <script src="js/main.min.js"></script>
