@@ -1901,9 +1901,9 @@ h6
 {
     position: relative;
     z-index: 15;
-    bottom: 100px;
 
-    margin-top: 125px;
+    margin-top: 25px;
+    margin-bottom: 20px;
     padding: 0;
 
     list-style-type: none;
@@ -1971,7 +1971,7 @@ h6
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 56px;
 
-    margin-top: 100px;
+    margin-top: 180px;
     margin-bottom: 75px;
 }
 .employee-interview-mb
