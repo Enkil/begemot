@@ -24,3 +24,15 @@ if ($('#employee-fullpage').length){
     $('.employee-toggle').addClass('employee-toggle--active');
     $('.header__btn').addClass('header__btn--employee');
 }
+
+if ($('#we-fullpage').length){
+    $('.header__menu').addClass('header__menu--show');
+    $('.header__gamburger').hide();
+    $('.header__menu-cross').parents('.header__menu-item').hide();
+}
+
+if ($('#graduate-fullpage').length){
+    $('.header__menu').addClass('header__menu--show');
+    $('.header__gamburger').hide();
+    $('.header__menu-cross').parents('.header__menu-item').hide();
+}

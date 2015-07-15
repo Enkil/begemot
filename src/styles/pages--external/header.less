@@ -9,18 +9,6 @@
   @media (max-width: 1024px) {
     width: 1024px;
   }
-
-  &__gamburger{
-    display: none;
-    @media (max-width: 1650px) {
-      .sprite(@sprite-gamburger);
-      display: block;
-      width: 28px;
-      height: 21px;
-      float: left;
-      margin-top: 30px;
-    }
-  }
   &__logo-link{
     display: block;
     width: 245px;
@@ -51,10 +39,27 @@
       z-index: 5;
       left: 0;
     }
+    &--show{
+      display: inline-block;
+      position: static;
+      background-color: transparent;
+      width: auto;
+    }
     &--active{
       @media (max-width: 1650px) {
         display: inline-block;
       }
+    }
+  }
+  &__gamburger{
+    display: none;
+    @media (max-width: 1650px) {
+      .sprite(@sprite-gamburger);
+      display: block;
+      width: 28px;
+      height: 21px;
+      float: left;
+      margin-top: 30px;
     }
   }
   &__menu-cross{
@@ -118,13 +123,20 @@
     .site-transition;
     .site-transition;
     &--employee{
-      margin-right: 5px;
+      margin-right: 50px;
       margin-left: 5px;
     }
     &:hover{
       color: @red;
       border: 2px solid @red;
     }
+  }
+}
+
+.header__menu--show{
+  > .header__menu-item{
+    display: inline-block;
+    //margin-top: 0;
   }
 }
 

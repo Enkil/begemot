@@ -49,7 +49,7 @@ var projectPath = {
         svgSprite: 'build/img/sprites/svg/svg-sprite.svg',
         svgSpriteNoSvg: 'build/img/sprites/svg/svg-sprite.png',
         svgSpriteCSS: 'src/styles/common/_svg-sprite.less',
-        fonts: 'build/css/fonts/'
+        fonts: 'build/css/'
     },
     src: { // Set source paths
         html: ['src/**/*.html', 'humans.txt'],
