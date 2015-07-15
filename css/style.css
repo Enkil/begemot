@@ -2,11 +2,12 @@
 /* Styles (LESS/CSS) files supervisor */
 /**************************************/
 /* Third party */
-@import '../../bower_components/fullpage.js/jquery.fullPage.css';
 @import '../../bower_components/object-fit/dist/polyfill.object-fit.css';
 @import '../../bower_components/object-fit/dist/polyfill.object-fit.css';
 @import '../../bower_components/slick.js/slick/slick.css';
 @import '../../bower_components/slick.js/slick/slick-theme.css';
+@import '../../bower_components/owl-carousel2/dist/assets/owl.carousel.css';
+@import '../../bower_components/owl-carousel2/dist/assets/owl.theme.default.css';
 @font-face
 {
     font-family: 'begemot-icon-font';
@@ -2040,6 +2041,8 @@ h6
 }
 .index-lead
 {
+    margin-top: 100px;
+
     text-align: center;
 
     border: 10px solid #fff;
@@ -2094,6 +2097,7 @@ h6
 
     margin-top: 55px;
     margin-right: 55px;
+    margin-bottom: 30px;
 }
 .index-num__digit
 {
@@ -2117,7 +2121,10 @@ h6
 }
 .who-we-are .slick-dots
 {
+    right: 0;
     bottom: -40px;
+
+    width: 22%;
 
     text-align: center;
 }
@@ -2142,9 +2149,10 @@ h6
 .who-we-are-nav
 {
     position: absolute;
+    right: 0;
     bottom: 0;
 
-    width: calc(100% - 30px);
+    width: 25%;
 }
 .who-we-are-nav__prev
 {
@@ -2200,7 +2208,7 @@ h6
 }
 .brands
 {
-    padding-top: 35px;
+    padding-top: 65px;
 }
 .brands__img
 {
@@ -2693,24 +2701,32 @@ h6
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__input::-moz-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__input:-moz-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__input:-ms-input-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__input:focus::-webkit-input-placeholder
 {
@@ -2749,24 +2765,32 @@ h6
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__textarea::-moz-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__textarea:-moz-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__textarea:-ms-input-placeholder
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 14px;
     line-height: 30px;
+
+    color: #666;
 }
 .contact-form__textarea:focus::-webkit-input-placeholder
 {
@@ -2843,13 +2867,13 @@ h6
 }
 .section-6
 {
-    margin-top: 100px;
+    margin-top: 250px;
     margin-bottom: 100px;
 }
 .section-2
 {
     margin-top: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span
