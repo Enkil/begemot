@@ -8,6 +8,7 @@
 @import '../../bower_components/slick.js/slick/slick-theme.css';
 @import '../../bower_components/owl-carousel2/dist/assets/owl.carousel.css';
 @import '../../bower_components/owl-carousel2/dist/assets/owl.theme.default.css';
+@import '../../bower_components/swiper/dist/css/swiper.css';
 @font-face
 {
     font-family: 'begemot-icon-font';
@@ -428,6 +429,13 @@ h6
 
     margin-top: 2%;
     margin-bottom: 2%;
+}
+@media (max-height: 645px)
+{
+    .team__slogan
+    {
+        margin-top: 0;
+    }
 }
 .team__photo
 {
@@ -2358,6 +2366,10 @@ h6
 
     color: #000;
 }
+.apps__case-view:hover
+{
+    color: #f52d42;
+}
 .apps__img
 {
     position: absolute;
@@ -2897,4 +2909,16 @@ h6
 
     border: 2px solid #f52d42;
     background-color: transparent;
+}
+.swiper-container
+{
+    width: 100%;
+}
+.swiper-container .swiper-slide
+{
+    opacity: 0!important;
+}
+.swiper-container .swiper-slide-active
+{
+    opacity: 1!important;
 }

@@ -13,4 +13,5 @@
 //= ../../bower_components/slick.js/slick/slick.js
 ////= ../../bower_components/jquery-scrollspy/scrollspy.js
 //= ../../bower_components/owl-carousel2/dist/owl.carousel.js
+//= ../../bower_components/swiper/dist/js/swiper.js
 

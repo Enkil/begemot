@@ -244,6 +244,7 @@
     font-size: 15px;
     text-decoration: underline;
     color: @black;
+    &:hover{color: @red;}
   }
   &__img{
     position: absolute;
@@ -615,4 +616,25 @@
   width: 10px;
   background-color: transparent;
   border: 2px solid @red;
+}
+
+.swiper-container {
+  width: 100%;
+  //height: 500px;
+
+  .swiper-slide{
+    opacity: 0!important;
+  }
+  .swiper-slide-active{
+    opacity: 1!important;
+  }
+
+  //.swiper-slide-prev{
+  //  opacity: 0!important;
+  //  display: none!important;
+  //}
+  //.swiper-slide-active{
+  //  opacity: 1 !important;
+  //  display: block !important;
+  //}
 }
