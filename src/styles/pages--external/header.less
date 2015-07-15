@@ -29,8 +29,8 @@
     display: inline-block;
     list-style-type: none;
     padding: 0;
-    left: -30px;
-    position: relative;
+    left: -30px!important;
+    position: relative!important;
     @media (max-width: 1650px) {
       display: none;
       background-color: @white;
@@ -50,6 +50,7 @@
     &--active{
       @media (max-width: 1650px) {
         display: inline-block;
+        position: absolute!important;
       }
     }
   }
