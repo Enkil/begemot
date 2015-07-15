@@ -23670,6 +23670,8 @@ $(document).ready(function() {
         $('.vacancy-modal').addClass('vacancy-modal--active');
         $('.vacancy-modal__wrapper').off('mousewheel');
         $('.vacancy-modal__wrapper').on('mousewheel');
+        //$('.vacancy-modal').scrollTop(0);
+        $("html, body").scrollTop($(".vacancy-modal").offset().top);
     });
     
     $('.vacancy-modal__cross').click(function(){
