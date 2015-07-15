@@ -358,7 +358,8 @@ h6
 {
     position: relative;
 
-    height: 605px;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 100px;
 
     cursor: pointer;
@@ -381,7 +382,7 @@ h6
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 14px;
 
-    margin-top: 80px;
+    margin-top: 2%;
     margin-bottom: 0;
 
     letter-spacing: 2px;
@@ -412,7 +413,7 @@ h6
     position: relative;
     z-index: 10;
 
-    margin-top: 50px;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 .team__photo
