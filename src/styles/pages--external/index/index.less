@@ -153,6 +153,7 @@
 
 .apps{
   position: relative;
+  margin-top: 100px;
 
   &__slider{
     position: relative;
@@ -263,6 +264,7 @@
   width: 20%;
   bottom: 280px;
   left: 70px;
+  z-index: 50;
   &__prev{
     .sprite(@sprite-who-we-are-nav-prev);
     background-color: transparent;
@@ -654,9 +656,11 @@
   }
   .swiper-pagination{
     bottom: 0;
-    width: auto;
-    right: 80px;
+    width: 22%;
+    right: 17px;
+    text-align: center;
     left: inherit;
+    z-index: 30;
   }
   .swiper-pagination-bullet{
     .ProximaNova-Regular;
@@ -677,3 +681,40 @@
     color: @red;
   }
  }
+
+.swiper-container-3{
+
+  .swiper-slide{
+    opacity: 0!important;
+  }
+  .swiper-slide-active{
+    opacity: 1!important;
+  }
+  .swiper-pagination3{
+    position: absolute;
+    bottom: 80px;
+    width: 12%;
+    text-align: center;
+    left: 82px;
+    z-index: 60;
+  }
+  .swiper-pagination-bullet{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    color: @black;
+    background-color: transparent;
+    opacity: 1;
+    height: 16px;
+    width: 10px;
+    text-align: center;
+    margin: 0 5px;
+    .site-transition;
+    &:hover{
+      color: @red;
+    }
+  }
+  .swiper-pagination-bullet-active{
+    background-color: transparent;
+    color: @red;
+  }
+}

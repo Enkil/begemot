@@ -1,19 +1,15 @@
-$('.apps__slider').slick({
-    dots:true,
-    prevArrow: $('.apps-nav__prev'),
-    nextArrow: $('.apps-nav__next'),
-    infinite: true,
-    speed: 200,
-    fade: true,
-    cssEase: 'linear'
+var swiper3 = new Swiper('.swiper-container-3', {
+    nextButton: '.apps-nav__next',
+    prevButton: '.apps-nav__prev',
+    spaceBetween: 0,
+    effect: 'fade',
+    keyboardControl: true,
+    slidesPerView: 1,
+    loop: true,
+    speed: 500,
+    pagination: '.swiper-pagination3',
+    paginationClickable: true,
+    paginationBulletRender: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+    }
 });
-
-
-$('.apps-nav__prev, .apps-nav__next').click(function() {
-    var totalAppSlides = $('.slick-track').find('.slick-slide:not(.slick-cloned)').length;
-    var currentAppSlide = $('.slick-track').find('.slick-slide:not(.slick-cloned)').index($('.slick-active'));
-    console.log('total slides:' + totalAppSlides);
-    console.log('current slide:' + currentAppSlide);
-});
-
-//sl_number = $('.radio-lbl').index($('.ui-state-active'));
