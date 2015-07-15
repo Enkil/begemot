@@ -8,6 +8,7 @@
 @import '../../bower_components/slick.js/slick/slick-theme.css';
 @import '../../bower_components/owl-carousel2/dist/assets/owl.carousel.css';
 @import '../../bower_components/owl-carousel2/dist/assets/owl.theme.default.css';
+@import '../../bower_components/swiper/dist/css/swiper.css';
 @font-face
 {
     font-family: 'begemot-icon-font';
@@ -2908,4 +2909,8 @@ h6
 
     border: 2px solid #f52d42;
     background-color: transparent;
+}
+.swiper-container
+{
+    width: 100%;
 }
