@@ -2040,6 +2040,8 @@ h6
 }
 .index-lead
 {
+    margin-top: 100px;
+
     text-align: center;
 
     border: 10px solid #fff;
@@ -2843,13 +2845,13 @@ h6
 }
 .section-6
 {
-    margin-top: 100px;
+    margin-top: 250px;
     margin-bottom: 100px;
 }
 .section-2
 {
     margin-top: 100px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span

@@ -19213,7 +19213,7 @@ $(document).ready(function() {
 
     /* Custom */
 
-    if ($('#index-fullpage').length){
+    if ($('#index-fullpage2').length){
         $('#index-fullpage').fullpage({
             anchors:['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
             //fitToSection: false,
