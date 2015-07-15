@@ -10,6 +10,9 @@
     position: relative;
     z-index: 10;
     font-weight: 600;
+    @media  (max-height: 780px) {
+      line-height: 100px;
+    }
   }
   &__role{
     .ProximaNova-Regular;
@@ -17,6 +20,9 @@
     margin-top: 50px;
     position: relative;
     z-index: 10;
+    @media  (max-height: 780px) {
+      margin-top: 20px;
+    }
   }
   &__text{
     .ProximaNova-Regular;
@@ -24,6 +30,9 @@
     margin-top: 25px;
     position: relative;
     z-index: 10;
+    @media  (max-height: 780px) {
+      margin-top: 10px;
+    }
   }
 }
 
@@ -35,6 +44,9 @@
   position: relative;
   z-index: 15;
   //bottom: 100px;
+  @media  (max-height: 780px) {
+    margin-top: 5px;
+  }
   &__item{
     display: inline-block;
   }
@@ -60,10 +72,14 @@
   position: relative;
   &__img{
     position: absolute;
-    right: -200px;
+    //right: -200px;
+    right: -50px;
     max-height: 800px;
     top: -65px;
     z-index: 5;
+    @media  (max-height: 780px) {
+      max-width: 650px;
+    }
   }
   &__border{
     display: inline-block;
@@ -71,8 +87,11 @@
     height: 570px;
     border: 10px solid @red;
     position: absolute;
-    right: -195px;
+    right: -5%;
     z-index: 1;
+    @media  (max-height: 780px) {
+      height: 450px;
+    }
   }
 }
 

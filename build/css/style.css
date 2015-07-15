@@ -1877,6 +1877,13 @@ h6
     position: relative;
     z-index: 10;
 }
+@media (max-height: 780px)
+{
+    .employee__name
+    {
+        line-height: 100px;
+    }
+}
 .employee__role
 {
     font-family: 'ProximaNova-Regular', sans-serif;
@@ -1886,6 +1893,13 @@ h6
     z-index: 10;
 
     margin-top: 50px;
+}
+@media (max-height: 780px)
+{
+    .employee__role
+    {
+        margin-top: 20px;
+    }
 }
 .employee__text
 {
@@ -1897,6 +1911,13 @@ h6
 
     margin-top: 25px;
 }
+@media (max-height: 780px)
+{
+    .employee__text
+    {
+        margin-top: 10px;
+    }
+}
 .employee-nav
 {
     position: relative;
@@ -1907,6 +1928,13 @@ h6
     padding: 0;
 
     list-style-type: none;
+}
+@media (max-height: 780px)
+{
+    .employee-nav
+    {
+        margin-top: 5px;
+    }
 }
 .employee-nav__item
 {
@@ -1949,15 +1977,22 @@ h6
     position: absolute;
     z-index: 5;
     top: -65px;
-    right: -200px;
+    right: -50px;
 
     max-height: 800px;
+}
+@media (max-height: 780px)
+{
+    .employee-photo__img
+    {
+        max-width: 650px;
+    }
 }
 .employee-photo__border
 {
     position: absolute;
     z-index: 1;
-    right: -195px;
+    right: -5%;
 
     display: inline-block;
 
@@ -1965,6 +2000,13 @@ h6
     height: 570px;
 
     border: 10px solid #f52d42;
+}
+@media (max-height: 780px)
+{
+    .employee-photo__border
+    {
+        height: 450px;
+    }
 }
 .employee-header
 {
