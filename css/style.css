@@ -1172,8 +1172,8 @@ h6
 }
 .header__menu
 {
-    position: relative;
-    left: -30px;
+    position: relative!important;
+    left: -30px !important;
 
     display: inline-block;
 
@@ -1212,6 +1212,8 @@ h6
 {
     .header__menu--active
     {
+        position: absolute!important;
+
         display: inline-block;
     }
 }
