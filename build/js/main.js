@@ -23728,16 +23728,6 @@ $(document).ready(function() {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     });
-    //$('.apps__slider').slick({
-    //    dots:true,
-    //    prevArrow: $('.apps-nav__prev'),
-    //    nextArrow: $('.apps-nav__next'),
-    //    infinite: true,
-    //    speed: 200,
-    //    fade: true,
-    //    cssEase: 'linear'
-    //});
-    
     var swiper3 = new Swiper('.swiper-container-3', {
         nextButton: '.apps-nav__next',
         prevButton: '.apps-nav__prev',
@@ -23753,46 +23743,6 @@ $(document).ready(function() {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     });
-    //$('.js-why-us__title-1').click(function () {
-    //    thisBlock = $('#why-us-1');
-    //    allBlocks = $('.js-why-us');
-    //
-    //    allBlocks.addClass('hidden');
-    //    thisBlock.removeClass('hidden');
-    //});
-    //
-    //$('.js-why-us__title-2').click(function () {
-    //    thisBlock = $('#why-us-2');
-    //    allBlocks = $('.js-why-us');
-    //
-    //    allBlocks.addClass('hidden');
-    //    thisBlock.removeClass('hidden');
-    //});
-    //
-    //$('.js-why-us__title-3').click(function () {
-    //    thisBlock = $('#why-us-3');
-    //    allBlocks = $('.js-why-us');
-    //
-    //    allBlocks.addClass('hidden');
-    //    thisBlock.removeClass('hidden');
-    //});
-    
-    
-    //$('.why-us-slider').slick({
-    //    slidesToShow: 1,
-    //    infinite: true,
-    //    speed: 300,
-    //    arrows: false
-    //});
-    
-    //$('.why-us-slider').owlCarousel({
-    //    items:1,
-    //    //loop:false,
-    //    margin:0,
-    //    dots: false
-    //    //URLhashListener:true,
-    //});
-    
     var swiper = new Swiper('.swiper-container', {
         //pagination: '.swiper-pagination',
         //paginationClickable: '.swiper-pagination',
@@ -23857,14 +23807,31 @@ $(document).ready(function() {
         }
     
     });
-    $('.we-slide').slick({
-        infinite: true,
-        dots: true,
-        fade: true,
-        speed: 500,
+    //$('.we-slide').slick({
+    //    infinite: true,
+    //    dots: true,
+    //    fade: true,
+    //    speed: 500,
+    //
+    //    cssEase: 'ease',
+    //    //useCSS: true
+    //});
     
-        cssEase: 'ease',
-        //useCSS: true
+    
+    var swiper4 = new Swiper('.swiper-container-4', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 0,
+        effect: 'fade',
+        keyboardControl: true,
+        slidesPerView: 1,
+        loop: true,
+        speed: 500,
+        pagination: '.swiper-pagination4',
+        paginationClickable: true,
+        paginationBulletRender: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
     });
     $('.header__gamburger').click(function() {
         event.preventDefault();
