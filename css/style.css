@@ -1061,6 +1061,9 @@ h6
 }
 .header__menu
 {
+    position: relative;
+    left: -30px;
+
     display: inline-block;
 
     padding: 0;
@@ -2151,8 +2154,12 @@ h6
     position: relative;
     z-index: 5;
 
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 435px;
+
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 .who-we-are .slick-dots
 {
@@ -2184,6 +2191,7 @@ h6
 .who-we-are-nav
 {
     position: absolute;
+    z-index: 25;
     right: 15px;
     bottom: 55px;
 
@@ -2942,4 +2950,45 @@ h6
 .swiper-container .swiper-slide-active
 {
     opacity: 1!important;
+}
+.swiper-container-2 .swiper-slide
+{
+    opacity: 0!important;
+}
+.swiper-container-2 .swiper-slide-active
+{
+    opacity: 1!important;
+}
+.swiper-container-2 .swiper-pagination
+{
+    right: 80px;
+    bottom: 0;
+    left: inherit;
+
+    width: auto;
+}
+.swiper-container-2 .swiper-pagination-bullet
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+
+    width: 10px;
+    height: 16px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+    text-align: center;
+
+    opacity: 1;
+    color: #000;
+    background-color: transparent;
+}
+.swiper-container-2 .swiper-pagination-bullet:hover
+{
+    color: #f52d42;
+}
+.swiper-container-2 .swiper-pagination-bullet-active
+{
+    color: #f52d42;
+    background-color: transparent;
 }
