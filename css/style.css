@@ -332,9 +332,17 @@ h6
 
     border-bottom: 2px solid #f52d42;
 }
+.headers-line--centered
+{
+    margin: 0 auto;
+}
 .pos-r
 {
     position: relative;
+}
+.d-ib
+{
+    display: inline-block;
 }
 .container
 {
@@ -342,7 +350,7 @@ h6
 }
 .we-headers
 {
-    margin-top: 135px;
+    margin-top: 235px;
 
     text-align: center;
 }
@@ -354,12 +362,21 @@ h6
 {
     position: relative;
 
-    height: 605px;
+    width: 90%;
+    height: 530px;
+    margin: 0 auto;
     margin-top: 100px;
 
     cursor: pointer;
 
     border: 10px solid #f52d42;
+}
+@media (max-height: 650px)
+{
+    .team
+    {
+        height: 420px;
+    }
 }
 .team:hover .team__name
 {
@@ -377,7 +394,7 @@ h6
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 14px;
 
-    margin-top: 80px;
+    margin-top: 2%;
     margin-bottom: 0;
 
     letter-spacing: 2px;
@@ -408,7 +425,7 @@ h6
     position: relative;
     z-index: 10;
 
-    margin-top: 50px;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 .team__photo
@@ -420,6 +437,7 @@ h6
     overflow: hidden;
 
     height: 110%;
+    min-height: 460px;
 
     -o-object-fit: cover;
        object-fit: cover;
@@ -1015,8 +1033,6 @@ h6
         width: 28px;
         height: 21px;
         margin-top: 30px;
-        margin-right: 20px;
-        margin-left: 20px;
 
         background-image: url(../img/sprites/png/png-sprite.png);
         background-position: -107px -47px;
@@ -1058,6 +1074,10 @@ h6
 {
     .header__menu
     {
+        position: absolute;
+        z-index: 5;
+        left: 0;
+
         display: none;
 
         width: 200px;
@@ -1089,8 +1109,13 @@ h6
         margin-top: 5px;
         margin-bottom: 55px;
 
+        opacity: .7;
         background-image: url(../img/sprites/png/png-sprite.png);
         background-position: -107px -68px;
+    }
+    .header__menu-cross:hover
+    {
+        opacity: 1;
     }
 }
 .header__menu-item
@@ -1167,6 +1192,11 @@ h6
     {
         margin-right: 40px;
     }
+}
+.header__btn--employee
+{
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .header__btn:hover
 {
@@ -1275,8 +1305,6 @@ h6
     padding-right: 20px;
     padding-left: 20px;
 
-    -webkit-transition: all .5s ease;
-            transition: all .5s ease;
     text-align: center;
     text-transform: uppercase;
 
@@ -1438,7 +1466,7 @@ h6
 
     width: 44px;
     height: 22px;
-    margin-right: 25px;
+    margin-right: 10px;
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -107px 0;
@@ -1446,7 +1474,7 @@ h6
 .employee-toggle__arrow--next
 {
     margin-right: 0;
-    margin-left: 25px;
+    margin-left: 10px;
 
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -1849,6 +1877,13 @@ h6
     position: relative;
     z-index: 10;
 }
+@media (max-height: 780px)
+{
+    .employee__name
+    {
+        line-height: 100px;
+    }
+}
 .employee__role
 {
     font-family: 'ProximaNova-Regular', sans-serif;
@@ -1858,6 +1893,13 @@ h6
     z-index: 10;
 
     margin-top: 50px;
+}
+@media (max-height: 780px)
+{
+    .employee__role
+    {
+        margin-top: 20px;
+    }
 }
 .employee__text
 {
@@ -1869,16 +1911,30 @@ h6
 
     margin-top: 25px;
 }
+@media (max-height: 780px)
+{
+    .employee__text
+    {
+        margin-top: 10px;
+    }
+}
 .employee-nav
 {
     position: relative;
     z-index: 15;
-    bottom: 100px;
 
-    margin-top: 125px;
+    margin-top: 25px;
+    margin-bottom: 20px;
     padding: 0;
 
     list-style-type: none;
+}
+@media (max-height: 780px)
+{
+    .employee-nav
+    {
+        margin-top: 5px;
+    }
 }
 .employee-nav__item
 {
@@ -1921,15 +1977,22 @@ h6
     position: absolute;
     z-index: 5;
     top: -65px;
-    right: -200px;
+    right: -50px;
 
     max-height: 800px;
+}
+@media (max-height: 780px)
+{
+    .employee-photo__img
+    {
+        max-width: 650px;
+    }
 }
 .employee-photo__border
 {
     position: absolute;
     z-index: 1;
-    right: -195px;
+    right: -5%;
 
     display: inline-block;
 
@@ -1938,12 +2001,19 @@ h6
 
     border: 10px solid #f52d42;
 }
+@media (max-height: 780px)
+{
+    .employee-photo__border
+    {
+        height: 450px;
+    }
+}
 .employee-header
 {
     font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 56px;
 
-    margin-top: 100px;
+    margin-top: 180px;
     margin-bottom: 75px;
 }
 .employee-interview-mb
