@@ -359,12 +359,20 @@ h6
     position: relative;
 
     width: 90%;
+    height: 530px;
     margin: 0 auto;
     margin-top: 100px;
 
     cursor: pointer;
 
     border: 10px solid #f52d42;
+}
+@media (max-height: 650px)
+{
+    .team
+    {
+        height: 420px;
+    }
 }
 .team:hover .team__name
 {
@@ -425,6 +433,7 @@ h6
     overflow: hidden;
 
     height: 110%;
+    min-height: 460px;
 
     -o-object-fit: cover;
        object-fit: cover;
