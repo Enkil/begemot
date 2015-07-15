@@ -43,15 +43,21 @@
   font-size: 24px;
   margin-top: 55px;
   margin-right: 55px;
+  margin-bottom: 30px;
   &__digit{
     color: @red;
     font-size: 30px;
   }
 }
-
+.who-we-are-text{
+  position: absolute;
+  z-index: 20;
+  width: 170%;
+}
 .who-we-are{
 //  border: 10px solid @red;
   position: relative;
+  top: -55px;
 //  top: 20px;
 //  z-index: 1;
 //  margin-bottom: 40px;
@@ -59,13 +65,15 @@
     position: relative;
     z-index: 5;
 //    width: 800px;
-    height: 300px;
+//    height: 300px;
     object-fit: cover;
   }
 
   .slick-dots{
     text-align: center;
     bottom: -40px;
+    width: 22%;
+    right: 15px;
     li{
       button{
         .ProximaNova-Regular;
@@ -89,8 +97,10 @@
 
 .who-we-are-nav{
   position: absolute;
-  width: calc(~"100% - 30px");
-  bottom: 0;
+  //width: calc(~"100% - 30px");
+  bottom: 55px;
+  width: 25%;
+  right: 15px;
   &__prev{
     .sprite(@sprite-who-we-are-nav-prev);
     background-color: transparent;
@@ -129,7 +139,7 @@
 }
 
 .brands{
-  padding-top: 35px;
+  padding-top: 65px;
   &__img{
     margin-right: 30px;
     margin-top: 10px;
@@ -482,21 +492,25 @@
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
     &::-moz-placeholder          {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
     &:-moz-placeholder           {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
     &:-ms-input-placeholder      {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
 
     &:focus::-webkit-input-placeholder {color: transparent}
@@ -520,21 +534,25 @@
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
     &::-moz-placeholder          {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
     &:-moz-placeholder           {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
     &:-ms-input-placeholder      {
       .ProximaNova-Bold;
       font-size: 14px;
       line-height: 30px;
+      color: @dark;
     }
 
     &:focus::-webkit-input-placeholder {color: transparent}
