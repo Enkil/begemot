@@ -175,36 +175,36 @@ This must be run when you have at least 2 sprites.
 {
     font-family: 'ProximaNova-Black';
 
-    src: url('fonts/proxima-nova/2EA374_0_0.eot');
-    src: url('fonts/proxima-nova/2EA374_0_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/2EA374_0_0.woff2') format('woff2'), url('fonts/proxima-nova/2EA374_0_0.woff') format('woff'), url('fonts/proxima-nova/2EA374_0_0.ttf') format('truetype');
+    src: url('proxima-nova/2EA374_0_0.eot');
+    src: url('proxima-nova/2EA374_0_0.eot?#iefix') format('embedded-opentype'), url('proxima-nova/2EA374_0_0.woff2') format('woff2'), url('proxima-nova/2EA374_0_0.woff') format('woff'), url('proxima-nova/2EA374_0_0.ttf') format('truetype');
 }
 @font-face
 {
     font-family: 'ProximaNova-Bold';
 
-    src: url('fonts/proxima-nova/2E8546_1_0.eot');
-    src: url('fonts/proxima-nova/2E8546_1_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/2E8546_1_0.woff2') format('woff2'), url('fonts/proxima-nova/2E8546_1_0.woff') format('woff'), url('fonts/proxima-nova/2E8546_1_0.ttf') format('truetype');
+    src: url('proxima-nova/2E8546_1_0.eot');
+    src: url('proxima-nova/2E8546_1_0.eot?#iefix') format('embedded-opentype'), url('proxima-nova/2E8546_1_0.woff2') format('woff2'), url('proxima-nova/2E8546_1_0.woff') format('woff'), url('proxima-nova/2E8546_1_0.ttf') format('truetype');
 }
 @font-face
 {
     font-family: 'ProximaNova-Light';
 
-    src: url('fonts/proxima-nova/2E8546_2_0.eot');
-    src: url('fonts/proxima-nova/2E8546_2_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/2E8546_2_0.woff2') format('woff2'), url('fonts/proxima-nova/2E8546_2_0.woff') format('woff'), url('fonts/proxima-nova/2E8546_2_0.ttf') format('truetype');
+    src: url('proxima-nova/2E8546_2_0.eot');
+    src: url('proxima-nova/2E8546_2_0.eot?#iefix') format('embedded-opentype'), url('proxima-nova/2E8546_2_0.woff2') format('woff2'), url('proxima-nova/2E8546_2_0.woff') format('woff'), url('proxima-nova/2E8546_2_0.ttf') format('truetype');
 }
 @font-face
 {
     font-family: 'ProximaNova-Regular';
 
-    src: url('fonts/proxima-nova/2E8546_3_0.eot');
-    src: url('fonts/proxima-nova/2E8546_3_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/2E8546_3_0.woff2') format('woff2'), url('fonts/proxima-nova/2E8546_3_0.woff') format('woff'), url('fonts/proxima-nova/2E8546_3_0.ttf') format('truetype');
+    src: url('proxima-nova/2E8546_3_0.eot');
+    src: url('proxima-nova/2E8546_3_0.eot?#iefix') format('embedded-opentype'), url('proxima-nova/2E8546_3_0.woff2') format('woff2'), url('proxima-nova/2E8546_3_0.woff') format('woff'), url('proxima-nova/2E8546_3_0.ttf') format('truetype');
 }
 @font-face
 {
     font-family: 'ProximaNovaT-Thin';
 
-    src: url('fonts/proxima-nova/2E8546_4_0.eot');
-    src: url('fonts/proxima-nova/2E8546_4_0.eot?#iefix') format('embedded-opentype'), url('fonts/proxima-nova/2E8546_4_0.woff2') format('woff2'), url('fonts/proxima-nova/2E8546_4_0.woff') format('woff'), url('fonts/proxima-nova/2E8546_4_0.ttf') format('truetype');
+    src: url('proxima-nova/2E8546_4_0.eot');
+    src: url('proxima-nova/2E8546_4_0.eot?#iefix') format('embedded-opentype'), url('proxima-nova/2E8546_4_0.woff2') format('woff2'), url('proxima-nova/2E8546_4_0.woff') format('woff'), url('proxima-nova/2E8546_4_0.ttf') format('truetype');
 }
 .ProximaNova-Black
 {
