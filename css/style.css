@@ -786,9 +786,6 @@ h6
     width: 26px;
     height: 9px;
 
-    -webkit-transition: all .5s ease;
-            transition: all .5s ease;
-
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -107px -85px;
 }
@@ -1222,6 +1219,13 @@ h6
         margin-right: 40px;
     }
 }
+@media (max-width: 1080px)
+{
+    .header__btn
+    {
+        display: none;
+    }
+}
 .header__btn--employee
 {
     margin-right: 50px;
@@ -1351,6 +1355,13 @@ h6
     .header-main__btn
     {
         margin-right: 40px;
+    }
+}
+@media (max-width: 1080px)
+{
+    .header-main__btn
+    {
+        display: none;
     }
 }
 .header-main__btn:hover
@@ -2965,11 +2976,13 @@ h6
 .swiper-container-2 .swiper-pagination
 {
     z-index: 30;
-    right: 80px;
+    right: 17px;
     bottom: 0;
     left: inherit;
 
-    width: auto;
+    width: 22%;
+
+    text-align: center;
 }
 .swiper-container-2 .swiper-pagination-bullet
 {

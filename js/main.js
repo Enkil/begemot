@@ -23728,16 +23728,6 @@ $(document).ready(function() {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     });
-    //$('.apps__slider').slick({
-    //    dots:true,
-    //    prevArrow: $('.apps-nav__prev'),
-    //    nextArrow: $('.apps-nav__next'),
-    //    infinite: true,
-    //    speed: 200,
-    //    fade: true,
-    //    cssEase: 'linear'
-    //});
-    
     var swiper3 = new Swiper('.swiper-container-3', {
         nextButton: '.apps-nav__next',
         prevButton: '.apps-nav__prev',
@@ -23753,46 +23743,6 @@ $(document).ready(function() {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     });
-    //$('.js-why-us__title-1').click(function () {
-    //    thisBlock = $('#why-us-1');
-    //    allBlocks = $('.js-why-us');
-    //
-    //    allBlocks.addClass('hidden');
-    //    thisBlock.removeClass('hidden');
-    //});
-    //
-    //$('.js-why-us__title-2').click(function () {
-    //    thisBlock = $('#why-us-2');
-    //    allBlocks = $('.js-why-us');
-    //
-    //    allBlocks.addClass('hidden');
-    //    thisBlock.removeClass('hidden');
-    //});
-    //
-    //$('.js-why-us__title-3').click(function () {
-    //    thisBlock = $('#why-us-3');
-    //    allBlocks = $('.js-why-us');
-    //
-    //    allBlocks.addClass('hidden');
-    //    thisBlock.removeClass('hidden');
-    //});
-    
-    
-    //$('.why-us-slider').slick({
-    //    slidesToShow: 1,
-    //    infinite: true,
-    //    speed: 300,
-    //    arrows: false
-    //});
-    
-    //$('.why-us-slider').owlCarousel({
-    //    items:1,
-    //    //loop:false,
-    //    margin:0,
-    //    dots: false
-    //    //URLhashListener:true,
-    //});
-    
     var swiper = new Swiper('.swiper-container', {
         //pagination: '.swiper-pagination',
         //paginationClickable: '.swiper-pagination',
