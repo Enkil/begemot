@@ -2265,6 +2265,8 @@ h6
 .apps
 {
     position: relative;
+
+    margin-top: 100px;
 }
 .apps__slider
 {
@@ -2410,6 +2412,7 @@ h6
 .apps-nav
 {
     position: relative;
+    z-index: 50;
     bottom: 280px;
     left: 70px;
 
@@ -2961,6 +2964,7 @@ h6
 }
 .swiper-container-2 .swiper-pagination
 {
+    z-index: 30;
     right: 80px;
     bottom: 0;
     left: inherit;
@@ -2988,6 +2992,51 @@ h6
     color: #f52d42;
 }
 .swiper-container-2 .swiper-pagination-bullet-active
+{
+    color: #f52d42;
+    background-color: transparent;
+}
+.swiper-container-3 .swiper-slide
+{
+    opacity: 0!important;
+}
+.swiper-container-3 .swiper-slide-active
+{
+    opacity: 1!important;
+}
+.swiper-container-3 .swiper-pagination3
+{
+    position: absolute;
+    z-index: 60;
+    bottom: 80px;
+    left: 82px;
+
+    width: 12%;
+
+    text-align: center;
+}
+.swiper-container-3 .swiper-pagination-bullet
+{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+
+    width: 10px;
+    height: 16px;
+    margin: 0 5px;
+
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+    text-align: center;
+
+    opacity: 1;
+    color: #000;
+    background-color: transparent;
+}
+.swiper-container-3 .swiper-pagination-bullet:hover
+{
+    color: #f52d42;
+}
+.swiper-container-3 .swiper-pagination-bullet-active
 {
     color: #f52d42;
     background-color: transparent;
