@@ -19453,16 +19453,16 @@ $(document).ready(function() {
     });
     
     
-    if ($('#we-fullpage').length){
-        $(window).scroll(function() {
-            if(($(window).scrollTop() >= 500) && ($(window).scrollTop() <= 1400)){
-                $('.employee-toggle').addClass('employee-toggle--active');
-            }
-            else {
-                $('.employee-toggle').removeClass('employee-toggle--active');
-            }
-        });
-    }
+    //if ($('#we-fullpage').length){
+    //    $(window).scroll(function() {
+    //        if(($(window).scrollTop() >= 500) && ($(window).scrollTop() <= 1400)){
+    //            $('.employee-toggle').addClass('employee-toggle--active');
+    //        }
+    //        else {
+    //            $('.employee-toggle').removeClass('employee-toggle--active');
+    //        }
+    //    });
+    //}
     
     if ($('#employee-fullpage').length){
         $('.employee-toggle').addClass('employee-toggle--active');
