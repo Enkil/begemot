@@ -429,6 +429,13 @@ h6
     margin-top: 2%;
     margin-bottom: 2%;
 }
+@media (max-height: 645px)
+{
+    .team__slogan
+    {
+        margin-top: 0;
+    }
+}
 .team__photo
 {
     position: absolute;
@@ -2357,6 +2364,10 @@ h6
     text-decoration: underline;
 
     color: #000;
+}
+.apps__case-view:hover
+{
+    color: #f52d42;
 }
 .apps__img
 {
