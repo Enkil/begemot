@@ -22,4 +22,5 @@ $('.header__menu-cross').click(function(event) {
 
 if ($('#employee-fullpage').length){
     $('.employee-toggle').addClass('employee-toggle--active');
+    $('.header__btn').addClass('header__btn--employee');
 }

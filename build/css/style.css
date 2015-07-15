@@ -340,6 +340,10 @@ h6
 {
     position: relative;
 }
+.d-ib
+{
+    display: inline-block;
+}
 .container
 {
     min-width: 970px;
@@ -1029,8 +1033,6 @@ h6
         width: 28px;
         height: 21px;
         margin-top: 30px;
-        margin-right: 20px;
-        margin-left: 20px;
 
         background-image: url(../img/sprites/png/png-sprite.png);
         background-position: -107px -47px;
@@ -1072,6 +1074,10 @@ h6
 {
     .header__menu
     {
+        position: absolute;
+        z-index: 5;
+        left: 0;
+
         display: none;
 
         width: 200px;
@@ -1103,8 +1109,13 @@ h6
         margin-top: 5px;
         margin-bottom: 55px;
 
+        opacity: .7;
         background-image: url(../img/sprites/png/png-sprite.png);
         background-position: -107px -68px;
+    }
+    .header__menu-cross:hover
+    {
+        opacity: 1;
     }
 }
 .header__menu-item
@@ -1181,6 +1192,11 @@ h6
     {
         margin-right: 40px;
     }
+}
+.header__btn--employee
+{
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .header__btn:hover
 {
@@ -1289,8 +1305,6 @@ h6
     padding-right: 20px;
     padding-left: 20px;
 
-    -webkit-transition: all .5s ease;
-            transition: all .5s ease;
     text-align: center;
     text-transform: uppercase;
 
@@ -1452,7 +1466,7 @@ h6
 
     width: 44px;
     height: 22px;
-    margin-right: 25px;
+    margin-right: 10px;
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -107px 0;
@@ -1460,7 +1474,7 @@ h6
 .employee-toggle__arrow--next
 {
     margin-right: 0;
-    margin-left: 25px;
+    margin-left: 10px;
 
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
