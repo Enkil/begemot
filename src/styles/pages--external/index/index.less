@@ -66,7 +66,10 @@
     z-index: 5;
 //    width: 800px;
 //    height: 300px;
-    object-fit: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-height: 435px;
   }
 
   .slick-dots{
@@ -101,6 +104,7 @@
   bottom: 55px;
   width: 25%;
   right: 15px;
+  z-index: 25;
   &__prev{
     .sprite(@sprite-who-we-are-nav-prev);
     background-color: transparent;
@@ -639,3 +643,37 @@
   //  display: block !important;
   //}
 }
+
+.swiper-container-2{
+
+  .swiper-slide{
+    opacity: 0!important;
+  }
+  .swiper-slide-active{
+    opacity: 1!important;
+  }
+  .swiper-pagination{
+    bottom: 0;
+    width: auto;
+    right: 80px;
+    left: inherit;
+  }
+  .swiper-pagination-bullet{
+    .ProximaNova-Regular;
+    font-size: 16px;
+    color: @black;
+    background-color: transparent;
+    opacity: 1;
+    height: 16px;
+    width: 10px;
+    text-align: center;
+    .site-transition;
+    &:hover{
+      color: @red;
+    }
+  }
+  .swiper-pagination-bullet-active{
+    background-color: transparent;
+    color: @red;
+  }
+ }
