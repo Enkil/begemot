@@ -23783,11 +23783,12 @@ $(document).ready(function() {
         slidesPerView: 1,
     });
     
-    //$(".why-us__title").click(function(e) {
-    //    e.preventDefault();
-    //    var id = $(this).attr("data-item");
-    //    swiper.slideTo($(this).data('slide'));
-    //});
+    $(".why-us__title").click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr("data-item");
+        //swiper.slideTo($(this).data('slide'));
+        swiper.slideTo(id);
+    });
     $(".contact-form__input").focus(function() {
         $(this).parents(".contact-form__label").children('.js-label').removeClass('invisible');
     });

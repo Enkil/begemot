@@ -2914,3 +2914,11 @@ h6
 {
     width: 100%;
 }
+.swiper-container .swiper-slide
+{
+    opacity: 0!important;
+}
+.swiper-container .swiper-slide-active
+{
+    opacity: 1!important;
+}
