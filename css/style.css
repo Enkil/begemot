@@ -2105,23 +2105,29 @@ h6
 
     color: #f52d42;
 }
+.who-we-are-text
+{
+    position: absolute;
+    z-index: 20;
+
+    width: 170%;
+}
 .who-we-are
 {
     position: relative;
+    top: -55px;
 }
 .who-we-are__img
 {
     position: relative;
     z-index: 5;
 
-    height: 300px;
-
     -o-object-fit: cover;
        object-fit: cover;
 }
 .who-we-are .slick-dots
 {
-    right: 0;
+    right: 15px;
     bottom: -40px;
 
     width: 22%;
@@ -2149,8 +2155,8 @@ h6
 .who-we-are-nav
 {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 15px;
+    bottom: 55px;
 
     width: 25%;
 }
