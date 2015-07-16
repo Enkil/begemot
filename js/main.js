@@ -23699,9 +23699,9 @@ $(document).ready(function() {
         setTimeout(indexHeader, 200);
     }
     
-    if ($(".js-header-index").length) {
-        indexHeader();
-    }
+    //if ($(".js-header-index").length) {
+    //    indexHeader();
+    //}
     //$('.slick').slick({
     //    //variableWidth: true,
     //    //adaptiveHeight: true,

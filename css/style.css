@@ -1119,6 +1119,10 @@ h6
     background-image: url(../img/images/team-slider-arrow--hover.png);
     background-position: 50% 50%;
 }
+.swiper-container-4 .swiper-button-prev
+{
+    left: 0;
+}
 .swiper-container-4 .swiper-button-next
 {
     right: 0;
@@ -1130,7 +1134,7 @@ h6
 .header
 {
     position: fixed;
-    z-index: 50;
+    z-index: 150;
     top: 0;
 
     width: 100%;
@@ -1359,7 +1363,7 @@ h6
 .header-main
 {
     position: fixed;
-    z-index: 50;
+    z-index: 150;
     top: 0;
 
     width: 100%;
@@ -1488,7 +1492,7 @@ h6
 .header-index
 {
     position: relative;
-    z-index: 50;
+    z-index: 150;
 
     min-width: 1024px;
     height: 75px;
