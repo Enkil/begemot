@@ -8,7 +8,7 @@ function indexHeader(){
     setTimeout(indexHeader, 200);
 }
 
-if ($(".js-header-index").length) {
-    indexHeader();
-}
+//if ($(".js-header-index").length) {
+//    indexHeader();
+//}
 
