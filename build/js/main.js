@@ -23664,6 +23664,7 @@ $(document).ready(function() {
         disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
     });
     $('.vacancy').click(function(){
+        scrollBack = $(this);
         $('.footer').addClass('hidden');
         $('.header').addClass('hidden');
         $('main').addClass('hidden');
@@ -23679,6 +23680,9 @@ $(document).ready(function() {
         $('.footer').removeClass('hidden');
         $('.header').removeClass('hidden');
         $('main').removeClass('hidden');
+        $('html, body').animate({
+            scrollTop: scrollBack.offset().top
+        }, 1000);
     });
     
     $(document).keyup(function(event) {

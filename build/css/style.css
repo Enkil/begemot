@@ -2622,6 +2622,12 @@ h6
     width: 350px;
     margin-left: 70px;
 }
+.why-us__titles > ul
+{
+    padding: 0;
+
+    list-style: none;
+}
 .why-us__title
 {
     font-family: 'ProximaNova-Black', sans-serif;

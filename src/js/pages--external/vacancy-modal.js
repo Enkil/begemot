@@ -1,4 +1,5 @@
 $('.vacancy').click(function(){
+    scrollBack = $(this);
     $('.footer').addClass('hidden');
     $('.header').addClass('hidden');
     $('main').addClass('hidden');
@@ -14,6 +15,9 @@ $('.vacancy-modal__cross').click(function(){
     $('.footer').removeClass('hidden');
     $('.header').removeClass('hidden');
     $('main').removeClass('hidden');
+    $('html, body').animate({
+        scrollTop: scrollBack.offset().top
+    }, 1000);
 });
 
 $(document).keyup(function(event) {
