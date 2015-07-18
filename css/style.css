@@ -2536,7 +2536,7 @@ h6
     font-size: 14px;
     line-height: 25px;
 
-    margin-bottom: 10px;
+    margin-bottom: 0;
 
     text-transform: uppercase;
 }
@@ -2634,7 +2634,7 @@ h6
     position: relative;
 
     width: 85%;
-    height: 500px;
+    height: 570px;
     margin-top: 75px;
 
     border: 10px solid #fff;
@@ -2764,6 +2764,7 @@ h6
 
     width: 120px;
     height: 120px;
+    margin-top: 40px;
     margin-bottom: 10px;
 
     border-radius: 50%;
