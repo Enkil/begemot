@@ -45,7 +45,6 @@
 .index-title{
   .ProximaNova-Black;
   font-size: 32px;
-  font-weight: 600;
 }
 
 .index-text{
@@ -129,6 +128,9 @@
     border: none;
     opacity: .9;
     outline: none;
+    &:hover{
+      .sprite(@sprite-who-we-are-nav-prev-hover)
+    }
   }
   &__next{
     .sprite(@sprite-who-we-are-nav-next);
@@ -137,6 +139,9 @@
     opacity: .9;
     float: right;
     outline: none;
+    &:hover{
+      .sprite(@sprite-who-we-are-nav-next-hover)
+    }
   }
 }
 

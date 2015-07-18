@@ -336,8 +336,7 @@ h6
 {
     width: 45px;
     height: 2px;
-    margin-top: 15px;
-    margin-left: 4px;
+    margin-top: 10px;
 
     border-bottom: 2px solid #f52d42;
 }
@@ -2276,7 +2275,6 @@ h6
 {
     font-family: 'ProximaNova-Black', sans-serif;
     font-size: 32px;
-    font-weight: 600;
 }
 .index-text
 {
@@ -2373,7 +2371,15 @@ h6
     outline: none;
     background-color: transparent;
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -135px -47px;
+    background-position: -79px -48px;
+}
+.who-we-are-nav__prev:hover
+{
+    width: 10px;
+    height: 16px;
+
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -69px -48px;
 }
 .who-we-are-nav__next
 {
@@ -2386,6 +2392,14 @@ h6
     border: none;
     outline: none;
     background-color: transparent;
+    background-image: url(../img/sprites/png/png-sprite.png);
+    background-position: -135px -47px;
+}
+.who-we-are-nav__next:hover
+{
+    width: 10px;
+    height: 16px;
+
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -134px -22px;
 }
@@ -2596,7 +2610,7 @@ h6
     outline: none;
     background-color: transparent;
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -135px -47px;
+    background-position: -79px -48px;
 }
 .apps-nav__next
 {
@@ -2613,7 +2627,7 @@ h6
     outline: none;
     background-color: transparent;
     background-image: url(../img/sprites/png/png-sprite.png);
-    background-position: -134px -22px;
+    background-position: -135px -47px;
 }
 .why-us
 {
