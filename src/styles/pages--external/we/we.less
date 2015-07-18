@@ -72,24 +72,25 @@
     letter-spacing: 2px;
     margin-top: 2%;
     margin-bottom: 0;
+    text-transform: uppercase;
+    @media (max-height: 650px) {
+      margin-top: 1%;
+    }
   }
   &__name{
     .ProximaNova-Black;
     font-size: 120px;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0;
-    line-height: normal;
-    font-weight: 600;
+    font-weight: 300;
     position: relative;
     z-index: 10;
     .site-transition;
-    @media (max-height: 650px) {
-      margin-top: 0;
-      line-height: 1;
-    }
+    line-height: 1;
   }
   &__slogan{
+    .ProximaNova-Light;
     font-size: 18px;
     margin-bottom: 2%;
     margin-top: 2%;

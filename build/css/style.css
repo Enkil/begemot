@@ -407,37 +407,37 @@ h6
     margin-bottom: 0;
 
     letter-spacing: 2px;
+    text-transform: uppercase;
 
     color: #666;
+}
+@media (max-height: 650px)
+{
+    .team__position
+    {
+        margin-top: 1%;
+    }
 }
 .team__name
 {
     font-family: 'ProximaNova-Black', sans-serif;
     font-size: 120px;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: 300;
+    line-height: 1;
 
     position: relative;
     z-index: 10;
 
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0;
 
     -webkit-transition: all .5s ease;
             transition: all .5s ease;
     text-transform: uppercase;
 }
-@media (max-height: 650px)
-{
-    .team__name
-    {
-        line-height: 1;
-
-        margin-top: 0;
-    }
-}
 .team__slogan
 {
+    font-family: 'ProximaNova-Light', sans-serif;
     font-size: 18px;
 
     position: relative;
