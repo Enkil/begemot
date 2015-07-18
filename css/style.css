@@ -2211,20 +2211,25 @@ h6
 }
 .index-lead__title
 {
-    font-family: 'ProximaNova-Bold', sans-serif;
+    font-family: 'ProximaNova-Black', sans-serif;
     font-size: 64px;
 
     margin-top: 10%;
 }
 .index-lead__slogan
 {
-    font-family: 'ProximaNova-Regular', sans-serif;
+    font-family: 'ProximaNova-Light', sans-serif;
     font-size: 36px;
 
+    margin-top: 45px;
     margin-bottom: 10%;
 }
 .arrows-down-index
 {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 13px);
+
     width: 27px;
     height: 25px;
     margin: 0 auto;
@@ -2239,6 +2244,33 @@ h6
 
     width: 27px;
     height: 25px;
+}
+.arrows-down-index:hover
+{
+    -webkit-animation: arrow-index .6s alternate infinite;
+            animation: arrow-index .6s alternate infinite;
+}
+@-webkit-keyframes arrow-index
+{
+    from
+    {
+        top: 0;
+    }
+    to
+    {
+        top: 10px;
+    }
+}
+@keyframes arrow-index
+{
+    from
+    {
+        top: 0;
+    }
+    to
+    {
+        top: 10px;
+    }
 }
 .index-title
 {
@@ -3062,7 +3094,7 @@ h6
 }
 .section-2
 {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 100px;
 }
 #fp-nav ul li a span,
