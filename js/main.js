@@ -23658,6 +23658,25 @@ $(document).ready(function() {
     }
     
     footerPosition();
+    
+    
+    // Hide footer menu when scroll to page bottom
+    //if ($('#we-fullpage').length){
+    //    $(window).bind('scroll', function() {
+    //        if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight){
+    //            $('.footer').css('display','none');
+    //        }
+    //        else {
+    //            $('.footer').css('display','block');
+    //        }
+    //    });
+    //}
+    
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() == ($(document).height() - 200)) {
+            $('#scroll-nav').css('display','none');
+        }
+    });
     objectFit.polyfill({
         selector: '.team__photo', // this can be any CSS selector
         fittype: 'cover', // either contain, cover, fill or none
@@ -23706,6 +23725,20 @@ $(document).ready(function() {
     //if ($(".js-header-index").length) {
     //    indexHeader();
     //}
+    
+    $('.js-slide-to').click(function (e) {
+        e.preventDefault();
+    
+        var $correction = 200;
+    
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top - $correction + "px"
+        }, {
+            duration: 1000,
+            easing: "swing"
+        });
+        return false;
+    });
     //$('.slick').slick({
     //    //variableWidth: true,
     //    //adaptiveHeight: true,
