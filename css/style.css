@@ -1773,23 +1773,24 @@ h6
 .footer__hr
 {
     height: 3px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
 
     background-color: #000;
 }
 .footer__title
 {
-    font-family: 'ProximaNova-Regular', sans-serif;
+    font-family: 'ProximaNova-Bold', sans-serif;
     font-size: 16px;
-    font-weight: bold;
     line-height: 24px;
 }
 .footer__text
 {
     font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: normal;
+
+    margin-bottom: 1px;
 }
 .graduate-section
 {
@@ -2917,14 +2918,14 @@ h6
 {
     float: left;
 
-    width: 46%;
+    width: 48%;
     margin-right: 2%;
 }
 .contact-form__label--email
 {
     float: left;
 
-    width: 46%;
+    width: 48%;
     margin-left: 2%;
 }
 .contact-form__input
