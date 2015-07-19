@@ -2733,7 +2733,7 @@ h6
 .why-us__name
 {
     font-family: 'ProximaNova-Bold', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: normal;
 
     position: absolute;
@@ -2803,8 +2803,9 @@ h6
     position: relative;
 
     height: 420px;
+    margin-top: 30px;
 
-    border: 4px solid #fff;
+    border: 10px solid #fff;
 }
 .trick__img
 {
@@ -2833,9 +2834,19 @@ h6
 
     width: 38px;
     height: 30px;
+    margin-bottom: 20px;
 
     background-image: url(../img/sprites/png/png-sprite.png);
     background-position: -69px 0;
+}
+.trick-quote__name
+{
+    font-family: 'ProximaNova-Bold', sans-serif;
+    font-size: 13px;
+    line-height: normal;
+
+    text-align: right;
+    text-transform: uppercase;
 }
 .trick-quote__text
 {
