@@ -12,3 +12,16 @@ function indexHeader(){
 //    indexHeader();
 //}
 
+$('.js-slide-to').click(function (e) {
+    e.preventDefault();
+
+    var $correction = 200;
+
+    $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top - $correction + "px"
+    }, {
+        duration: 1000,
+        easing: "swing"
+    });
+    return false;
+});

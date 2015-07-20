@@ -1,7 +1,8 @@
 .index-lead{
   text-align: center;
   border: 10px solid @white;
-  margin-top: 100px;
+  height: 73vh;
+  margin-top: 16vh;
 
   &__title{
     .ProximaNova-Black;
@@ -78,7 +79,11 @@
 //  top: 20px;
 //  z-index: 1;
 //  margin-bottom: 40px;
-  &__img{
+  @media (min-width: 1400px) {
+    width: 115%;
+    max-height: 500px;
+  }
+    &__img{
     position: relative;
     z-index: 5;
 //    width: 800px;
