@@ -23,11 +23,16 @@ footerPosition();
 //    });
 //}
 
-$(window).scroll(function() {
-    if($(window).scrollTop() + $(window).height() == ($(document).height() - 200)) {
-        $('#scroll-nav').css('display','none');
+$('#scroll-nav').scroolly([
+    {
+        //from: 'el-top = vp-bottom - 100px',
+        from: 'el-bottom = doc-bottom + 100px',
+        to: 'el-bottom = doc-bottom',
+        css: {
+            display: 'none'
+        }
     }
-});
+]);
 
 var lastId,
     topMenu = $("#we-menu"),
