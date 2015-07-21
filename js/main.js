@@ -25146,16 +25146,16 @@ $(document).ready(function() {
     //    });
     //}
     
-    $('#scroll-nav').scroolly([
-        {
-            //from: 'el-top = vp-bottom - 100px',
-            from: 'el-bottom = doc-bottom + 100px',
-            to: 'el-bottom = doc-bottom',
-            css: {
-                display: 'none'
-            }
-        }
-    ]);
+    //$('#scroll-nav').scroolly([
+    //    {
+    //        //from: 'el-top = vp-bottom - 100px',
+    //        from: 'el-bottom = doc-bottom + 100px',
+    //        to: 'el-bottom = doc-bottom',
+    //        css: {
+    //            display: 'none'
+    //        }
+    //    }
+    //]);
     
     var lastId,
         topMenu = $("#we-menu"),
